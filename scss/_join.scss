@@ -1,0 +1,48 @@
+
+.join{
+    width: 100%;
+    padding-top: 100px;
+    .join_visual{
+        
+    }
+    .inner{
+        width: 1180px; margin: 0 auto;
+        position: relative;
+        border: 1px solid black;
+        text-align: center;
+
+        h1{
+            font:bold 50px/1 'Poppin';
+        }
+
+        form{
+            width: 100%;
+            margin-top: 100px;
+
+            textarea{
+                width: 80%; height: 250px; resize: none;
+                margin: 0 auto; display: block;
+                font: normal 16px/1.35 'Poppin';
+                margin-bottom: 30px;
+            }
+            .agreement{
+                margin-bottom:70px; 
+                text-align: center;
+                label[for=agree] { font-size:12px; }
+            }
+
+            table{
+                width: 100%;
+                margin: 100px 0;
+
+                th{
+                    width: 30%;
+                }
+               td{
+                }
+            }
+
+
+        }
+    }    
+}

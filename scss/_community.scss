@@ -1,0 +1,422 @@
+
+  .community {
+    width: 100%;
+  
+    .sub_visual {
+      background: url(../img/kinfolk.jpg) no-repeat center/cover;
+      height: 300px;
+      object-fit: cover;
+    }
+  
+    .inner {
+      padding-top: 100px;
+      width: 1180px;
+      margin: 0 auto;
+      position: relative;
+  
+      h1 {
+        font: bold 65px/1 "Poppins";
+        color: #222;
+      }
+      p {
+        font: normal 24px/1.5 "Poppins";
+        margin: 50px 0 30px;
+        color: #222;
+      }
+  
+      .category {
+        padding-top: 20px;
+        border-top: 1px solid black;
+        text-align: center;
+        p {
+          display: inline;
+          font: normal 20px/1.5 "Poppins";
+          color: #222;
+        }
+        button {
+          border: none;
+          font: normal 24px/1.5 "arial";
+          margin: 50px 0 20px 20px;
+          color: #222;
+          background: #fff;
+          transition: all 0.3s;
+  
+          &:nth-of-type(1) {
+            color: #a57721;
+          }
+          &:hover {
+            color: #a57721;
+          }
+        }
+        .searchBox {
+          width: 100%;
+          margin: 0 auto;
+          button {
+            font-size: 20px;
+            margin: 20px 0 0px 0px;
+            color: #555;
+          }
+          #search {
+            border: none;
+            width: 30%;
+            border-bottom: 1px solid black;
+          }
+        }
+      }
+  
+      table {
+        width: 80%;
+        margin: 100px auto 50px;
+        text-align: center;
+        color: #222;
+        th {
+          padding-bottom: 10px;
+          font: normal 24px/1.5 "Poppins";
+          border-bottom: 1px solid #ccc;
+  
+          &:nth-of-type(1) {
+            width: 25%;
+          }
+          &:nth-of-type(3) {
+            width: 5%;
+          }
+        }
+  
+        tr {
+          transition: all 0.3s;
+          &:hover {
+            background: #f0e9e1;
+          }
+  
+          & > td:nth-of-type(3) {
+            font: bold 24px "Poppins";
+            padding: 10px;
+          }
+        }
+  
+        td {
+          text-align: center;
+          padding: 15px;
+          font: normal 18px/1.5 "Poppins";
+          border-bottom: 1px solid #ccc;
+        }
+      }
+  
+      #pagination {
+        width: 100%;
+        text-align: center;
+        a {
+          color: #555;
+        }
+        .numbers {
+          display: inline-block;
+          margin: 0 30px;
+          a {
+            display: inline-block;
+            text-align: center;
+            margin: 10px;
+          }
+        }
+  
+        .send {
+          width: 100%;
+          text-align: center;
+          margin: 100px 0 150px;
+          p {
+            display: inline;
+            font-style: italic;
+          }
+          a {
+            font: bold 26px/1.5 "Poppins";
+            margin: 0 20px;
+            padding: 5px;
+            color: #222;
+            transition: all 0.3s;
+  
+            &:hover {
+              color: #a57721;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  #footer_sub {
+    width: 100%;
+    padding: 30px 30px 30px 30px;
+    border-top: 3px solid #222;
+  
+    .inner {
+      width: 1180px;
+      margin: 0 auto;
+      position: relative;
+  
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      h1 {
+        float: left;
+        font: bold 24px/ 1.2 "Nanum Myeongjo";
+        margin-bottom: 20px;
+      }
+      li {
+        margin-left: 10px;
+        float: right;
+        font: bold 20px/ 1.2 "Nanum Myeongjo";
+        a {
+          color: #222;
+        }
+      }
+    }
+    address {
+      float: right;
+      width: 100%;
+      font: bold 16px/ 1.5 "Nanum Myeongjo";
+      margin-bottom: 10px;
+    }
+    p {
+      float: right;
+      width: 100%;
+      font: bold 16px/ 2 "Nanum Myeongjo";
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @media screen and(max-width:1179px) {
+    #header_sub {
+      padding: 0;
+  
+      .inner {
+        width: 100%;
+        & >h1 {
+          top: 10%;
+          right: 10%;
+          font: bold 10vmin/1 "Poppins";
+          a {
+            color: rgb(46, 45, 45);
+          }
+          transform: translate(-50%, -50%);
+        }
+        nav {
+          #gnb {
+            display: none;
+          }
+          .util {
+            display: none;
+          }
+        }
+        /*--------------------------------------------------*/
+  
+        .btnCall {
+          display: block;
+          right: 5vw;
+          top: 2vh;
+          transform: translateY(0px);
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  
+    .community {
+      width: 100%;
+  
+      .sub_visual {
+        height: 300px;
+        object-fit: contain;
+      }
+  
+      .inner {
+        padding-top: 100px;
+        width: 100%;
+        text-align: center;
+        p {
+          font: normal 22px/1.5 "Poppins";
+        }
+  
+        .category {
+          button {
+            font: normal 18px/1.5 "Poppins";
+          }
+        }
+  
+        table {
+          margin: 50px auto 25px;
+          th {
+            padding-bottom: 10px;
+            font: normal 20px/1.5 "Poppins";
+          }
+          td {
+            padding: 5px;
+            font: normal 16px/1.5 "Poppins";
+          }
+        }
+  
+        #pagination {
+          .numbers {
+            margin: 0 10px;
+            a {
+              margin: 5px;
+            }
+          }
+  
+          .send {
+            margin: 50px 0 75px;
+            p {
+              font: 18px/1.5 "Poppins";
+            }
+            a {
+              display: block;
+              font: bold 24px/1.5 "Poppins";
+              margin: 20px 10px;
+              padding: 0px;
+            }
+          }
+        }
+      }
+    }
+  
+    #footer_sub {
+      width: 100%;
+  
+      .inner {
+        width: 100%;
+        h1 {
+          font: bold 18px/ 1.2 "Nanum Myeongjo";
+        }
+        li {
+          font: bold 16px/ 1.2 "Nanum Myeongjo";
+        }
+      }
+      address {
+        float: right;
+        width: 100%;
+        font: bold 16px/2 "Nanum Myeongjo";
+      }
+    }
+  }
+  
+  @media screen and (max-width: 539px) {
+    #header_sub {
+      
+      .inner {
+        h1 {
+          top: 10%;
+          left: 50%;
+          font: bold 15vmin/1 "Poppins";
+        }
+     }
+  }  
+    .community {
+      width: 100%;
+  
+      .sub_visual {
+        height: 150px;
+      }
+  
+      .inner {
+        padding-top: 50px;
+        h1 {
+          font: bold 42px/1.5 "Poppins";
+        }
+        p {
+          font: normal 18px/1.5 "Poppins";
+          margin: 30px auto 20px;
+        }
+  
+        .category {
+          p {
+            display: block;
+          }
+          button {
+            font: normal 14px/1.5 "Poppins";
+            margin: 20px 0 10px 10px;
+          }
+        }
+  
+        table {
+          width: 100%;
+          margin: 50px auto 25px;
+          th {
+            padding-bottom: 10px;
+            font: normal 18px/1.5 "Poppins";
+          }
+          td {
+            padding: 5px;
+            font: normal 14px/1.5 "Poppins";
+          }
+        }
+  
+        #pagination {
+          .numbers {
+            margin: 0 10px;
+            a {
+              margin: 5px;
+              &:nth-of-type(6) {
+                display: none;
+              }
+              &:nth-of-type(7) {
+                display: none;
+              }
+              &:nth-of-type(8) {
+                display: none;
+              }
+              &:nth-of-type(9) {
+                display: none;
+              }
+              &:nth-of-type(10) {
+                display: none;
+              }
+            }
+          }
+  
+          .send {
+            margin: 30px 0 50px;
+            p {
+              font: 16px/1.2 "Poppins";
+            }
+            a {
+              font: bold 20px/1.5 "Poppins";
+            }
+          }
+        }
+      }
+    }
+  
+    #footer_sub {
+      width: 100%;
+  
+      .inner {
+        width: 100%;
+        h1 {
+          width: 100%;
+          font: bold 20px/ 1.2 "Nanum Myeongjo";
+        }
+        li {
+          float: left;
+          font: bold 14px/ 1.2 "Nanum Myeongjo";
+          margin: 10px 10px 20px 0px;
+        }
+      }
+      address {
+        float: right;
+        width: 100%;
+        font: bold 14px/1.5 "Nanum Myeongjo";
+      }
+      p {
+        font: bold 14px/1.5 "Nanum Myeongjo";
+      }
+    }
+  }
+  
