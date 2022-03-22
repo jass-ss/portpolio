@@ -87,29 +87,89 @@ const article = document.querySelectorAll("section article");
 const aside = document.querySelector("aside");
 const txt = aside.querySelectorAll(".txt li");
 console.log(txt);
-const link = aside.querySelector('a');
+const link = aside.querySelector("a");
 const img = aside.querySelector("img");
 const closeBtn = aside.querySelector("span");
+const _top = aside.querySelector(".top");
+const _bottom = aside.querySelector(".bottom");
+const _left = aside.querySelector(".left");
+const _right = aside.querySelector(".right");
 
 closeBtn.addEventListener("click", () => {
   new Anime(aside, {
     prop: "bottom",
     value: "-100%",
-    duration: 500,
-    callback:()=>{
-      new Anime(closeBtn,{
-        prop:'opacity',
+    duration: 200,
+    callback: () => {
+      new Anime(closeBtn, {
+        prop: "opacity",
         value: 0,
-        duration:0,
-        callback:()=>{
-          new Anime(link,{
-            prop:'opacity',
-            value: 0,
-            duration:0,
-          })
-        }
-      })
-    }
+        duration: 500,
+        callback: () => {
+          new Anime(_top, {
+            prop: "width",
+            value: "0%",
+            duration: 0,
+            callback: () => {
+              new Anime(_top, {
+                prop: "opacity",
+                value: 1,
+                duration: 0,
+                callback: () => {
+                  new Anime(_right, {
+                    prop: "height",
+                    value: "0%",
+                    duration: 0,
+                    callback: () => {
+                      new Anime(_right, {
+                        prop: "opacity",
+                        value: 1,
+                        duration: 0,
+                        callback: () => {
+                          new Anime(_bottom, {
+                            prop: "width",
+                            value: "0%",
+                            duration: 0,
+                            callback: () => {
+                              new Anime(_bottom, {
+                                prop: "opacity",
+                                value: 1,
+                                duration: 0,
+                                callback: () => {
+                                  new Anime(_left, {
+                                    prop: "height",
+                                    value: "0%",
+                                    duration: 0,
+                                    callback: () => {
+                                      new Anime(_left, {
+                                        prop: "opacity",
+                                        value: 1,
+                                        duration: 0,
+                                        callback: () => {
+                                          new Anime(link, {
+                                            prop: "opacity",
+                                            value: 0,
+                                            duration: 500,
+                                          });
+                                        },
+                                      });
+                                    },
+                                  });
+                                },
+                              });
+                            },
+                          });
+                        },
+                      });
+                    },
+                  });
+                },
+              });
+            },
+          });
+        },
+      });
+    },
   });
 });
 
@@ -127,21 +187,98 @@ for (let el of article) {
     new Anime(aside, {
       prop: "bottom",
       value: "0%",
-      duration: 500,
-      callback:()=>{
-        new Anime(closeBtn,{
-          prop:'opacity',
+      duration: 200,
+      callback: () => {
+        new Anime(closeBtn, {
+          prop: "opacity",
           value: 1,
-          duration:500,
-          callback:()=>{
-            new Anime(link,{
-              prop:'opacity',
-              value: 1,
-              duration:500,
-            })
-          }
-        })
-      }
+          duration: 300,
+          callback: () => {
+            new Anime(_top, {
+              prop: "width",
+              value: '31%' ,
+              duration: 300,
+              callback: () => {
+                /*new Anime(_top, {
+                      prop: "opacity",
+                      value: 0,
+                      duration: 0,
+                      callback: () => {*/
+                new Anime(_right, {
+                  prop: "height",
+                  value: "43%",
+                  duration: 300,
+                  callback: () => {
+                    /*new Anime(_right, {
+                              prop: "opacity",
+                              value: 0,
+                              duration: 0,
+                              callback: () => {*/
+                    new Anime(_bottom, {
+                      prop: "width",
+                      value: "31%",
+                      duration: 300,
+                      callback: () => {
+                        /* new Anime(_bottom, {
+                                      prop: "opacity",
+                                      value: 0,
+                                      duration: 0,
+                                      callback: () => { */
+                        new Anime(_left, {
+                          prop: "height",
+                          value: "43%",
+                          duration: 300,
+                          callback: () => {
+                            /* new Anime(_left, {
+                                              prop: "opacity",
+                                              value: 0,
+                                              duration: 0,
+                                              callback:()=>{ */
+                            new Anime(_top, {
+                              prop: "opacity",
+                              value: 0,
+                              duration: 100,
+                              callback: () => {
+                                new Anime(_right, {
+                                  prop: "opacity",
+                                  value: 0,
+                                  duration: 100,
+                                  callback: () => {
+                                    new Anime(_bottom, {
+                                      prop: "opacity",
+                                      value: 0,
+                                      duration: 100,
+                                      callback: () => {
+                                        new Anime(_left, {
+                                          prop: "opacity",
+                                          value: 0,
+                                          duration: 100,
+                                          callback: () => {
+                                            new Anime(link, {
+                                              prop: "opacity",
+                                              value: 1,
+                                              duration: 300,
+                                              callback: () => {},
+                                            });
+                                          },
+                                        });
+                                      },
+                                    });
+                                  },
+                                });
+                              },
+                            });
+                          },
+                        });
+                      },
+                    });
+                  },
+                });
+              },
+            });
+          },
+        });
+      },
     });
   });
 }
