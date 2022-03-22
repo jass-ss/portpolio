@@ -1,0 +1,228 @@
+@charset 'UTF-8';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  object-fit: cover;
+}
+
+body {
+  width: 100%;
+
+  header {
+    margin-top: 100px;
+    background-image: url() no-repeat center/cover;
+    width: 100%;
+    height: 500px;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h1 {
+      position: absolute;
+      top: 35%;
+      left: 25%;
+      font: bold 70px/1 "arial";
+    }
+    p {
+      position: absolute;
+      top: 50%;
+      left: 25%;
+      font: normal 24px/1.5 "arial";
+    }
+  }
+
+  main .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+
+    .wrap {
+      padding-bottom: 30px;
+      border-bottom: 2px solid black;
+      display: flex;
+      height: 300px;
+
+      h1 {
+        flex: 1;
+        font: bold 30px/1 "arial";
+        margin: 100px 100px 50px 0;
+      }
+
+      .list {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .category{ 
+          min-width: 20%;
+          &.on a {
+            color: burlywood;
+          }
+        }
+        a {
+          color: #222;
+        }
+
+        .cate_appliance,
+        .cate_cookWear {
+          display: flex;
+          ul {
+            font-size: 24px;
+            font-family: "Poppin";
+          }
+          #appliance {
+            display: inline-block;
+            a {
+              color: #222;
+            }
+            li {
+              display: inline-block;
+              padding-left: 50px;
+              &.on a {
+                color: burlywood;
+              }
+            }
+          }
+
+          #cookWear {
+            display: inline-block;
+            a {
+              color: #222;
+            }
+            li {
+              display: inline-block;
+              padding-left: 55px;
+              &.on a {
+                color: burlywood;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    section {
+      width: 100%;
+      height: 100%;
+      margin-top: 100px;
+      /*display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      flex-direction: row;*/
+
+      article {
+        display: block;
+        width: 275px;
+        margin-right: 20px;
+        height: 300px;
+        margin-bottom: 50px;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 1px 1px 10px #22222230;
+
+        .txt {
+          text-align: center;
+          font: 22px/1.5 "Poppin";
+          & li:nth-of-type(1) {
+            height: 40px;
+          }
+        }
+
+        img {
+          width: 280px;
+          height: 250px;
+        }
+      }
+    }
+
+    aside {
+      width: 100%;
+      height: 100vh;
+      background: rgb(248, 245, 240);
+      //background: #333;
+      position: fixed;
+      bottom: -100%;
+      left: 0;
+      transition: all 0.5s;
+      color: #222;
+      //border-top: 2px solid rgb(12, 12, 12);
+
+      .aside_inner {
+        width: 1180px;
+        margin: 50px auto;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: flex-start;
+
+        img {
+          display: block;
+          width: 50%;
+          height: 400px;
+          margin-top: 150px;    
+          box-shadow: 1px 1px 10px #222;
+        }
+        .txt {
+          display: block;
+          width: 50%;
+          height: 30%;
+          margin-top: 200px; 
+          padding: 0 50px;
+          li {
+            color: #222;
+            font: normal 30px/1.5 "Poppin";
+            margin-bottom: 20px;
+          }
+          & li:nth-of-type(1) {
+            font: bold 40px/1.5 "arial";
+            margin-bottom: 30px;
+          }
+        }
+        a {
+          position: absolute;
+          top: 50%;   
+          left: calc(50% + 100px);
+          font: 28px/1 "poppin";
+          color: #222;
+          padding: 20px;
+          border-bottom: 3px solid #222;
+          opacity: 0;
+        }
+      }
+      span {
+        display: block;
+        position: absolute;
+        right: 50%;
+        bottom: 15%;
+        transform: translateX(50%);
+        font: normal 40px/1 "arial";
+        border: 3px solid #222;
+        color: #222;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        opacity: 0;
+      }
+    }
+  }
+}

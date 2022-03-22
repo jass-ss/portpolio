@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  object-fit: cover;
+}
+
+body {
+  width: 100%;
+}
+body header {
+  margin-top: 100px;
+  background-image: url() no-repeat center/cover;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+body header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body header h1 {
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  font: bold 70px/1 "arial";
+}
+body header p {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  font: normal 24px/1.5 "arial";
+}
+body main .inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+body main .inner .wrap {
+  padding-bottom: 30px;
+  border-bottom: 2px solid black;
+  display: flex;
+  height: 300px;
+}
+body main .inner .wrap h1 {
+  flex: 1;
+  font: bold 30px/1 "arial";
+  margin: 100px 100px 50px 0;
+}
+body main .inner .wrap .list {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+body main .inner .wrap .list .category {
+  min-width: 20%;
+}
+body main .inner .wrap .list .category.on a {
+  color: burlywood;
+}
+body main .inner .wrap .list a {
+  color: #222;
+}
+body main .inner .wrap .list .cate_appliance,
+body main .inner .wrap .list .cate_cookWear {
+  display: flex;
+}
+body main .inner .wrap .list .cate_appliance ul,
+body main .inner .wrap .list .cate_cookWear ul {
+  font-size: 24px;
+  font-family: "Poppin";
+}
+body main .inner .wrap .list .cate_appliance #appliance,
+body main .inner .wrap .list .cate_cookWear #appliance {
+  display: inline-block;
+}
+body main .inner .wrap .list .cate_appliance #appliance a,
+body main .inner .wrap .list .cate_cookWear #appliance a {
+  color: #222;
+}
+body main .inner .wrap .list .cate_appliance #appliance li,
+body main .inner .wrap .list .cate_cookWear #appliance li {
+  display: inline-block;
+  padding-left: 50px;
+}
+body main .inner .wrap .list .cate_appliance #appliance li.on a,
+body main .inner .wrap .list .cate_cookWear #appliance li.on a {
+  color: burlywood;
+}
+body main .inner .wrap .list .cate_appliance #cookWear,
+body main .inner .wrap .list .cate_cookWear #cookWear {
+  display: inline-block;
+}
+body main .inner .wrap .list .cate_appliance #cookWear a,
+body main .inner .wrap .list .cate_cookWear #cookWear a {
+  color: #222;
+}
+body main .inner .wrap .list .cate_appliance #cookWear li,
+body main .inner .wrap .list .cate_cookWear #cookWear li {
+  display: inline-block;
+  padding-left: 55px;
+}
+body main .inner .wrap .list .cate_appliance #cookWear li.on a,
+body main .inner .wrap .list .cate_cookWear #cookWear li.on a {
+  color: burlywood;
+}
+body main .inner section {
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+  /*display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row;*/
+}
+body main .inner section article {
+  display: block;
+  width: 275px;
+  margin-right: 20px;
+  height: 300px;
+  margin-bottom: 50px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px #22222230;
+}
+body main .inner section article .txt {
+  text-align: center;
+  font: 22px/1.5 "Poppin";
+}
+body main .inner section article .txt li:nth-of-type(1) {
+  height: 40px;
+}
+body main .inner section article img {
+  width: 280px;
+  height: 250px;
+}
+body main .inner aside {
+  width: 100%;
+  height: 100vh;
+  background: #f8f5f0;
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  transition: all 0.5s;
+  color: #222;
+}
+body main .inner aside .aside_inner {
+  width: 1180px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+body main .inner aside .aside_inner img {
+  display: block;
+  width: 50%;
+  height: 400px;
+  margin-top: 150px;
+  box-shadow: 1px 1px 10px #222;
+}
+body main .inner aside .aside_inner .txt {
+  display: block;
+  width: 50%;
+  height: 30%;
+  margin-top: 200px;
+  padding: 0 50px;
+}
+body main .inner aside .aside_inner .txt li {
+  color: #222;
+  font: normal 30px/1.5 "Poppin";
+  margin-bottom: 20px;
+}
+body main .inner aside .aside_inner .txt li:nth-of-type(1) {
+  font: bold 40px/1.5 "arial";
+  margin-bottom: 30px;
+}
+body main .inner aside .aside_inner a {
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 100px);
+  font: 28px/1 "poppin";
+  color: #222;
+  padding: 20px;
+  border-bottom: 3px solid #222;
+  opacity: 0;
+}
+body main .inner aside span {
+  display: block;
+  position: absolute;
+  right: 50%;
+  bottom: 15%;
+  transform: translateX(50%);
+  font: normal 40px/1 "arial";
+  border: 3px solid #222;
+  color: #222;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+/*# sourceMappingURL=store.css.map */
