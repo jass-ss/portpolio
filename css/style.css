@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#slider {
+  width: 400px;
+  height: 200px;
+  position: relative;
+  margin: 100px auto;
+  border: 5px solid #000;
+  overflow: hidden;
+}
+#slider ul {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 400%;
+  height: 100%;
+}
+#slider ul li {
+  width: 25%;
+  height: 100%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #fff;
+}
+#slider ul li[data-index="1"] {
+  background: palevioletred;
+}
+#slider ul li[data-index="2"] {
+  background: silver;
+}
+#slider ul li[data-index="3"] {
+  background: skyblue;
+}
+#slider ul li[data-index="4"] {
+  background: peachpuff;
+}
+#slider .prev {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  margin-top: -50px;
+}
+#slider .next {
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  margin-top: -50px;
+}
+
+/*# sourceMappingURL=style.css.map */
