@@ -318,7 +318,7 @@
       }
 
       img {
-        width: 100vw;
+        width: calc(100vw - 20px);
         height: 500px;
         position: absolute;
         left: 0;

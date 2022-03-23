@@ -9,6 +9,7 @@
     <script
       src="https://kit.fontawesome.com/e6e501712d.js"
       crossorigin="anonymous"></script>
+    <script src="js/anime.js"></script>  
     <script defer src="js/main.js"></script>
     <!--defer : html문서를 다 읽은 후에 js스크립트를 읽어라-->
   </head>
@@ -49,16 +50,30 @@
     </header>
 
     <figure id="visual">
-      <video src="" autoplay loop muted></video>
+      <div class="slide">
+        <div class="pics">
+          <img src="./img/visual1.jpg" ></img>
+          <img src="./img/visual3.jpg" ></img>
+          <img src="./img/visual2.jpg" ></img>
+          <img src="./img/visual6.jpg" ></img>
+          <img src="./img/visual7.jpg" ></img>
+        </div>
+      </div>
       <div class="inner">
-        <h1>TECHNOLOGY WITH STYLE</h1>
-        <p>
-          Product that express "MAade in Italy" <br />
-          by perfectly combinung design, performance and attention to detail.
-        </p>
-        <a href="subpage.html"
-          >view more <i class="fa-solid fa-arrow-right-long"></i
-        ></a>
+        <div class="wrap">
+          <h1>TECHNOLOGY WITH STYLE</h1>
+          <p>perfectly combinung design, <br>performance and attention to detail.
+          </p>
+          <a href="subpage.html"
+            >view more <i class="fa-solid fa-arrow-right-long"></i
+          ></a>
+          <a href="#" class="prev"><i class="fa-solid fa-arrow-left-long"></i></a>
+          <a href="#" class="next"><i class="fa-solid fa-arrow-right-long"></i></a>
+          <a href="#" class="play"><i class="fa-solid fa-caret-right"></i></a>
+          <a href="#" class="stop"><i class="fa-solid fa-pause"></i></a>    
+          <div class="time"></div>
+        </div>
+
       </div>
     </figure>
 
@@ -69,7 +84,7 @@
         <div class="wrap">
           <div class="box">
             <article>
-              <img src="./img/detail0.jpg" alt="black chiller" />
+              <img src="./img/detail0.jpg" alt="area induction" />
               <h3>DETAILS AND CHROMING</h3>
               <p>
                 choose between classic and stainless steel and enamelled steal,
