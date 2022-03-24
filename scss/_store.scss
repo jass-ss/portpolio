@@ -1,32 +1,11 @@
 @charset 'UTF-8';
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-ul,
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
+.store img {
   object-fit: cover;
 }
-
-body {
-  width: 100%;
-
   .store_visual {
-    margin-top: 100px;
-    background-image: url() no-repeat center/cover;
     width: 100%;
-    height: 500px;
+    height: 450px;
     position: relative;
 
     img {
@@ -52,7 +31,7 @@ body {
     }
   }
 
-  section .inner {
+  main .inner {
     width: 1180px;
     margin: 0 auto;
     position: relative;
@@ -75,6 +54,9 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        font: 24px/1 "Lora";
+        color: #222;
+
         .category{ 
           min-width: 20%;
           &.on a {
@@ -99,6 +81,7 @@ body {
             }
             li {
               display: inline-block;
+              font: 24px/1 "Lora";
               padding-left: 50px;
               &.on a {
                 color: burlywood;
@@ -113,7 +96,8 @@ body {
             }
             li {
               display: inline-block;
-              padding-left: 55px;
+              font: 24px/1 "Lora";
+              padding-left: 60px;
               &.on a {
                 color: burlywood;
               }
@@ -123,20 +107,18 @@ body {
       }
     }
 
-    section {
-      width: 100%;
+    .store_product {
+      width: 1180px !important;
       height: 100%;
       margin-top: 100px;
-      /*display: flex;
+      margin-left: 10px;
+      position: relative; 
+      display: flex;
       flex-wrap: wrap;
-      justify-content: space-evenly;
-      flex-direction: row;*/
-
       article {
-        display: block;
         width: 275px;
-        margin-right: 20px;
         height: 300px;
+        margin-right: 20px;
         margin-bottom: 50px;
         overflow: hidden;
         cursor: pointer;
@@ -144,15 +126,18 @@ body {
 
         .txt {
           text-align: center;
-          font: 22px/1.5 "Poppin";
+          font: 22px/1.5 "Lora";
+          color: #444;
           & li:nth-of-type(1) {
             height: 40px;
+            margin-bottom: 10px;
           }
         }
 
         img {
-          width: 280px;
-          height: 250px;
+          width: 100%;
+          padding: 0 10px;
+          height: 240px;
         }
       }
     }
@@ -228,11 +213,11 @@ body {
           padding: 0 50px;
           li {
             color: #222;
-            font: normal 30px/1.5 "Poppin";
+            font: normal 30px/1.5 "Lora";
             margin-bottom: 20px;
           }
           & li:nth-of-type(1) {
-            font: bold 40px/1.5 "arial";
+            font: bold 40px/1.5 "Lora";
             margin-bottom: 20px;
           }
         }
@@ -263,4 +248,3 @@ body {
       }
     }
   }
-}

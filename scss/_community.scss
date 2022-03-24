@@ -148,49 +148,6 @@
     }
   }
   
-  #footer_sub {
-    width: 100%;
-    padding: 30px 30px 30px 30px;
-    border-top: 3px solid #222;
-  
-    .inner {
-      width: 1180px;
-      margin: 0 auto;
-      position: relative;
-  
-      &::after {
-        content: "";
-        display: block;
-        clear: both;
-      }
-      h1 {
-        float: left;
-        font: bold 24px/ 1.2 "Nanum Myeongjo";
-        margin-bottom: 20px;
-      }
-      li {
-        margin-left: 10px;
-        float: right;
-        font: bold 20px/ 1.2 "Nanum Myeongjo";
-        a {
-          color: #222;
-        }
-      }
-    }
-    address {
-      float: right;
-      width: 100%;
-      font: bold 16px/ 1.5 "Nanum Myeongjo";
-      margin-bottom: 10px;
-    }
-    p {
-      float: right;
-      width: 100%;
-      font: bold 16px/ 2 "Nanum Myeongjo";
-    }
-  }
-  
-  
   
   
   
@@ -293,24 +250,7 @@
       }
     }
   
-    #footer_sub {
-      width: 100%;
   
-      .inner {
-        width: 100%;
-        h1 {
-          font: bold 18px/ 1.2 "Nanum Myeongjo";
-        }
-        li {
-          font: bold 16px/ 1.2 "Nanum Myeongjo";
-        }
-      }
-      address {
-        float: right;
-        width: 100%;
-        font: bold 16px/2 "Nanum Myeongjo";
-      }
-    }
   }
   
   @media screen and (max-width: 539px) {
@@ -400,29 +340,5 @@
       }
     }
   
-    #footer_sub {
-      width: 100%;
-  
-      .inner {
-        width: 100%;
-        h1 {
-          width: 100%;
-          font: bold 20px/ 1.2 "Nanum Myeongjo";
-        }
-        li {
-          float: left;
-          font: bold 14px/ 1.2 "Nanum Myeongjo";
-          margin: 10px 10px 20px 0px;
-        }
-      }
-      address {
-        float: right;
-        width: 100%;
-        font: bold 14px/1.5 "Nanum Myeongjo";
-      }
-      p {
-        font: bold 14px/1.5 "Nanum Myeongjo";
-      }
-    }
   }
   

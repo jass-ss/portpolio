@@ -1,4 +1,4 @@
-class Anim {
+class Anime {
     constructor(selector, option){
         this.selector = selector;
         this.option = option;

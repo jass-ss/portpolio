@@ -41,57 +41,57 @@ const _left = aside.querySelector(".left");
 const _right = aside.querySelector(".right");
 
 closeBtn.addEventListener("click", () => {
-  new Anime(aside, {
+  new Anim(aside, {
     prop: "bottom",
     value: "-100%",
     duration: 200,
     callback: () => {
-      new Anime(closeBtn, {
+      new Anim(closeBtn, {
         prop: "opacity",
         value: 0,
         duration: 500,
         callback: () => {
-          new Anime(_top, {
+          new Anim(_top, {
             prop: "width",
             value: "0%",
             duration: 0,
             callback: () => {
-              new Anime(_top, {
+              new Anim(_top, {
                 prop: "opacity",
                 value: 1,
                 duration: 0,
                 callback: () => {
-                  new Anime(_right, {
+                  new Anim(_right, {
                     prop: "height",
                     value: "0%",
                     duration: 0,
                     callback: () => {
-                      new Anime(_right, {
+                      new Anim(_right, {
                         prop: "opacity",
                         value: 1,
                         duration: 0,
                         callback: () => {
-                          new Anime(_bottom, {
+                          new Anim(_bottom, {
                             prop: "width",
                             value: "0%",
                             duration: 0,
                             callback: () => {
-                              new Anime(_bottom, {
+                              new Anim(_bottom, {
                                 prop: "opacity",
                                 value: 1,
                                 duration: 0,
                                 callback: () => {
-                                  new Anime(_left, {
+                                  new Anim(_left, {
                                     prop: "height",
                                     value: "0%",
                                     duration: 0,
                                     callback: () => {
-                                      new Anime(_left, {
+                                      new Anim(_left, {
                                         prop: "opacity",
                                         value: 1,
                                         duration: 0,
                                         callback: () => {
-                                          new Anime(link, {
+                                          new Anim(link, {
                                             prop: "opacity",
                                             value: 0,
                                             duration: 500,
@@ -129,77 +129,77 @@ for (let el of article) {
     const src = e.currentTarget.querySelector("img").getAttribute("src");
     console.log(src);
     img.setAttribute("src", src);
-    new Anime(aside, {
+    new Anim(aside, {
       prop: "bottom",
-      value: "0%",
+      value: "10%",
       duration: 200,
       callback: () => {
-        new Anime(closeBtn, {
+        new Anim(closeBtn, {
           prop: "opacity",
           value: 1,
           duration: 300,
           callback: () => {
-            new Anime(_top, {
+            new Anim(_top, {
               prop: "width",
               value: '30%' ,
               duration: 300,
               callback: () => {
-                /*new Anime(_top, {
+                /*new Anim(_top, {
                       prop: "opacity",
                       value: 0,
                       duration: 0,
                       callback: () => {*/
-                new Anime(_right, {
+                new Anim(_right, {
                   prop: "height",
                   value: "45%",
                   duration: 300,
                   callback: () => {
-                    /*new Anime(_right, {
+                    /*new Anim(_right, {
                               prop: "opacity",
                               value: 0,
                               duration: 0,
                               callback: () => {*/
-                    new Anime(_bottom, {
+                    new Anim(_bottom, {
                       prop: "width",
                       value: "30%",
                       duration: 300,
                       callback: () => {
-                        /* new Anime(_bottom, {
+                        /* new Anim(_bottom, {
                                       prop: "opacity",
                                       value: 0,
                                       duration: 0,
                                       callback: () => { */
-                        new Anime(_left, {
+                        new Anim(_left, {
                           prop: "height",
                           value: "45%",
                           duration: 300,
                           callback: () => {
-                            /* new Anime(_left, {
+                            /* new Anim(_left, {
                                               prop: "opacity",
                                               value: 0,
                                               duration: 0,
                                               callback:()=>{ */
-                            new Anime(_top, {
+                            new Anim(_top, {
                               prop: "opacity",
                               value: 0,
                               duration: 100,
                               callback: () => {
-                                new Anime(_right, {
+                                new Anim(_right, {
                                   prop: "opacity",
                                   value: 0,
                                   duration: 100,
                                   callback: () => {
-                                    new Anime(_bottom, {
+                                    new Anim(_bottom, {
                                       prop: "opacity",
                                       value: 0,
                                       duration: 100,
                                       callback: () => {
-                                        new Anime(_left, {
+                                        new Anim(_left, {
                                           prop: "opacity",
                                           value: 0,
                                           duration: 100,
                                           callback: () => {
-                                            new Anime(link, {
+                                            new Anim(link, {
                                               prop: "opacity",
                                               value: 1,
                                               duration: 300,
