@@ -15,12 +15,34 @@ btnCall.onclick = function(e){
     menuMo.classList.toggle('on');
 }
 
-
 const next = document.querySelector('#visual .next');
 const prev = document.querySelector('#visual .prev');
 const play = document.querySelector('#visual .play');
 const pause = document.querySelector('#visual .stop');
 const time =document.querySelector('#visual .time');
+
+const service = document.querySelector('#service');
+const serviceOdd = service.querySelectorAll('.odd');
+const serviceEven = service.querySelectorAll('.even');
+const brand = document.querySelector('#brand');
+
+const serviceTop = service.offsetTop;
+const brandTop = brand.offsetTop;
+console.log(serviceEven)
+window.addEventListener('scroll', e=>{
+    const scroll = window.scrollY;
+    if(scroll >= `${serviceTop - 250}`){
+        serviceOdd.forEach((el)=>{el.classList.add('on')})
+    }; 
+    
+    if(scroll >= `${serviceTop + 250}`){
+        serviceEven.forEach((el)=>{el.classList.add('on')})
+    };
+    if(scroll >= `${brandTop -500}`){
+        brand.classList.add('on')
+    };
+})
+
 
 let running = setInterval(()=>run(), 10000);
 

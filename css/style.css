@@ -1472,16 +1472,71 @@ main .inner aside span {
   transform: translateX(-50%);
 }
 #service .inner .box {
-  margin: 100px 0;
+  margin-top: 100px;
+  margin-bottom: 100px;
   float: left;
   width: 380px;
   margin-right: 20px;
 }
+#service .inner .box:nth-of-type(1) .odd {
+  opacity: 0;
+  margin-top: 100px;
+  transition: all 1s;
+}
+#service .inner .box:nth-of-type(1) .odd.on {
+  opacity: 1;
+  margin-top: 0px;
+}
+#service .inner .box:nth-of-type(1) .even {
+  transition: all 1s 0.1s;
+  opacity: 0;
+  margin-top: 100px;
+}
+#service .inner .box:nth-of-type(1) .even.on {
+  opacity: 1;
+  margin-top: 0px;
+}
 #service .inner .box:nth-of-type(2) {
   margin-top: 200px;
 }
+#service .inner .box:nth-of-type(2) .odd {
+  opacity: 0;
+  margin-top: 100px;
+  transition: all 1s 0.2s;
+}
+#service .inner .box:nth-of-type(2) .odd.on {
+  opacity: 1;
+  margin-top: 0px;
+}
+#service .inner .box:nth-of-type(2) .even {
+  transition: all 1s 0.3s;
+  opacity: 0;
+  margin-top: 100px;
+}
+#service .inner .box:nth-of-type(2) .even.on {
+  opacity: 1;
+  margin-top: 0px;
+}
 #service .inner .box:nth-of-type(3) {
   margin-right: 0;
+}
+#service .inner .box:nth-of-type(3) .odd {
+  opacity: 0;
+  margin-top: 100px;
+  transition: all 1s 0.4s;
+}
+#service .inner .box:nth-of-type(3) .odd.on {
+  opacity: 1;
+  margin-top: 0px;
+}
+#service .inner .box:nth-of-type(3) .even {
+  transition: all 1s 0.5s;
+  opacity: 0;
+  margin-top: 100px;
+}
+#service .inner .box:nth-of-type(3) .even.on {
+  opacity: 1;
+  margin-top: 0px;
 }
 #service .inner .box img {
   width: 100%;
@@ -1576,6 +1631,24 @@ main .inner aside span {
   width: 100%;
   padding: 200px 0;
   text-align: center;
+}
+#brand article {
+  filter: contrast(50%);
+}
+#brand article:nth-of-type(1) {
+  transition: all 0.8s;
+}
+#brand article:nth-of-type(2) {
+  transition: all 0.8s 0.5s;
+}
+#brand article:nth-of-type(3) {
+  transition: all 0.8s 1s;
+}
+#brand.on article {
+  filter: contrast(100%) brightness(1.1);
+}
+#brand.on article:nth-of-type(1) {
+  filter: contrast(100%) brightness(1.5);
 }
 #brand .inner {
   width: 1180px;

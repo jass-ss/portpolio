@@ -290,18 +290,58 @@
     }
 
     .box {
-      margin: 100px 0;
+      margin-top:100px; margin-bottom: 100px;
       float: left;
       width: 380px;
       margin-right: 20px;
+      &:nth-of-type(1){
+        .odd { 
+          opacity: 0;
+          margin-top: 100px;
+          transition: all 1s;
+          &.on{opacity: 1; margin-top: 0px;}
+        }
+        
+      .even{
+        transition: all 1s 0.1s;
+        opacity: 0;   margin-top: 100px;
+
+        &.on{ opacity: 1;  margin-top: 0px;}
+      }
+      }
 
       &:nth-of-type(2) {
-        margin-top: 200px;
+        margin-top: 200px; 
+        .odd { 
+          opacity: 0; margin-top: 100px;
+          transition: all 1s 0.2s; 
+          &.on{opacity: 1; margin-top: 0px;}
+        }
+        
+      .even{
+        transition: all 1s 0.3s;
+        opacity: 0; margin-top: 100px;
+
+        &.on{ opacity: 1; margin-top:0px;}
+      }
       }
 
       &:nth-of-type(3) {
-        margin-right: 0;
+        margin-right: 0; 
+        .odd { 
+          opacity: 0;
+          margin-top: 100px;
+          transition: all 1s 0.4s; 
+          &.on{opacity: 1; margin-top: 0px;}
+        }
+        .even{
+          transition: all 1s 0.5s;
+          opacity: 0;   margin-top: 100px;
+  
+          &.on{ opacity: 1;   margin-top: 0px;}
+        }
       }
+
 
       img {
         width: 100%;
@@ -400,6 +440,18 @@
   width: 100%;
   padding: 200px 0;
   text-align: center;
+
+  & article{
+    filter: contrast(50%);
+    &:nth-of-type(1){ transition: all 0.8s;}
+    &:nth-of-type(2){ transition: all 0.8s 0.5s;}
+    &:nth-of-type(3){ transition: all 0.8s 1s;}
+  }
+
+  &.on article{
+    filter: contrast(100%) brightness(1.1);
+    &:nth-of-type(1){ filter: contrast(100%) brightness(1.5);}
+  }
 
   .inner {
     width: 1180px;
