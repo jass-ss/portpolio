@@ -35,11 +35,10 @@ fieldset {
 
 #header_sub {
   width: 100%;
-  border: 1px solid #dddd;
 }
 #header_sub .inner {
   width: 1180px;
-  height: 120px;
+  height: 150px;
   margin: 0 auto;
   position: relative;
 }
@@ -52,21 +51,34 @@ fieldset {
   font: bold 24px/1 "Poppins";
   color: #333;
 }
+#header_sub .inner .mainMenu {
+  position: absolute;
+  bottom: 15px;
+  right: -50px;
+}
+#header_sub .inner .mainMenu li {
+  float: left;
+  margin-left: 20px;
+}
+#header_sub .inner .mainMenu li a {
+  font: 20px/1 "Poppins";
+  color: #333;
+}
 #header_sub .inner .util {
   position: absolute;
-  top: 20px;
-  left: -10px;
+  top: 50px;
+  right: -50px;
 }
 #header_sub .inner .util li {
   float: left;
   margin-left: 20px;
 }
 #header_sub .inner .util li a {
-  font: 12px/1 "Poppins";
-  color: #999;
+  font: 20px/1 "Poppins";
+  color: #333;
 }
 #header_sub .inner .btnCall {
-  display: block;
+  display: none;
   width: 50px;
   height: 50px;
   position: absolute;
@@ -162,34 +174,81 @@ fieldset {
   text-align: center;
 }
 
-.content {
+main {
   width: 100%;
-  position: relative;
+  /* .two2 {
+     width: 100%;
+     height: 100vh;
+
+     .inner {
+       width: 1180px;
+       margin: 0 auto;
+       position: relative;
+
+       .wrapper {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+
+         article {
+           margin-top: 50px;
+           width: 50%;
+           text-align: center;
+
+           &:nth-of-type(2){
+             margin-top: 300px;
+           }
+
+           img {
+             padding: 0 50px;
+             width: 100%;
+             height: 450px;
+             object-fit: cover;
+           }
+           h2 {
+             padding: 30px;
+             font: bold 24px/1.5 "Poppins";
+             color: #333;
+           }
+           p {
+             padding: 0 50px;
+             font: normal 18px/1.5 "Poppins";
+             color: #333;
+           }
+         }
+       }
+     }
+   } */
 }
-.content .sub_visual {
+main .one {
   width: 100%;
-  height: 600px;
+  height: 100vh;
+}
+main .one .sub_visual {
+  width: 100%;
+  height: 450px;
   background: url(../img/chrome.jpg) no-repeat center/cover;
   filter: grayscale(50%) brightness(1.2);
+  box-shadow: 2px 1px 10px #222;
   z-index: -2;
 }
-.content .sub_visual .text {
+main .one .sub_visual .text {
   position: absolute;
   width: 50%;
-  top: 30%;
+  top: 25%;
   padding-left: 20%;
   padding-right: 70px;
 }
-.content .sub_visual .text h1 {
+main .one .sub_visual .text h1 {
   font: bold 50px/1.5 "Poppins";
   color: #fff;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
-.content .sub_visual .text p {
+main .one .sub_visual .text p {
   font: normal 22px/1.5 "Poppins";
   color: #fff;
 }
-.content .sub_visual::after {
+main .one .sub_visual::after {
   content: "";
   display: block;
   width: 50%;
@@ -200,12 +259,12 @@ fieldset {
   top: 0;
   z-index: -1;
 }
-.content .inner {
+main .one .inner {
   width: 1180px;
   margin: 0 auto;
 }
-.content .inner .intro {
-  padding: 100px 25% 0 25%;
+main .one .inner .intro {
+  padding: 50px 25% 0 25%;
   font: italic 24px/2 "Poppins";
   color: #333;
   width: 100%;
@@ -213,7 +272,7 @@ fieldset {
   text-align: center;
   margin-bottom: 150px;
 }
-.content .inner .intro::before {
+main .one .inner .intro::before {
   content: "";
   display: block;
   width: 200px;
@@ -222,40 +281,93 @@ fieldset {
   transform: translateX(100%);
   margin-bottom: 30px;
 }
-.content .inner .tech1 {
+main .two1, main .two2 {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  height: 100vh;
 }
-.content .inner .tech1 > article {
-  width: 50%;
-  float: left;
-  text-align: center;
+main .two1 article:nth-of-type(1), main .two2 article:nth-of-type(1) {
+  opacity: 0;
+  margin-top: 120px;
+  transition: all 0.4s;
 }
-.content .inner .tech1 > article:nth-of-type(2n) {
+main .two1 article:nth-of-type(2), main .two2 article:nth-of-type(2) {
+  margin-top: 300px;
+  opacity: 0;
+  transition: all 0.5s 0.2s;
+}
+main .two1.on article:nth-of-type(1), main .two2.on article:nth-of-type(1) {
+  opacity: 1;
+  margin-top: 50px;
+}
+main .two1.on article:nth-of-type(2), main .two2.on article:nth-of-type(2) {
+  opacity: 1;
   margin-top: 250px;
 }
-.content .inner .tech1 > article:nth-of-type(3) {
-  margin-bottom: 50px;
+main .two1 .inner, main .two2 .inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
 }
-.content .inner .tech1 > article:nth-of-type(4) {
-  margin-bottom: 50px;
+main .two1 .inner .wrapper, main .two2 .inner .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.content .inner .tech1 > article:nth-of-type(5) {
-  margin: 50px 0;
+main .two1 .inner .wrapper article, main .two2 .inner .wrapper article {
+  width: 50%;
+  text-align: center;
+}
+main .two1 .inner .wrapper article img, main .two2 .inner .wrapper article img {
+  padding: 0 50px;
   width: 100%;
+  height: 450px;
+  object-fit: cover;
 }
-.content .inner .tech1 > article:nth-of-type(5) h2 {
-  margin: 20px 0px 70px 0px;
+main .two1 .inner .wrapper article h2, main .two2 .inner .wrapper article h2 {
+  padding: 30px;
+  font: bold 24px/1.5 "Poppins";
+  color: #333;
+}
+main .two1 .inner .wrapper article p, main .two2 .inner .wrapper article p {
+  padding: 0 50px;
+  font: normal 18px/1.5 "Poppins";
+  color: #333;
+}
+main .three {
+  width: 100%;
+  height: 100vh;
+  padding-top: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+main .three .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+main .three .inner h2 {
+  margin: 30px 0px 50px 0px;
+  text-align: center;
   font: bold 30px/1.5 "Poppins";
+  color: #222;
 }
-.content .inner .tech1 > article:nth-of-type(5) li {
+main .three .inner article {
+  width: 100%;
+  text-align: center;
+}
+main .three .inner article ul {
+  font-size: 0;
+}
+main .three .inner article ul li {
   display: inline-block;
-  margin: 10px;
-  width: 150px;
+  margin: 30px 20px 75px 0px;
+  width: 280px;
 }
-.content .inner .tech1 > article:nth-of-type(5) li::before {
+main .three .inner article ul li:nth-of-type(4) {
+  margin-right: 0;
+}
+main .three .inner article ul li::before {
   margin: 0 auto;
   content: "";
   display: block;
@@ -263,54 +375,71 @@ fieldset {
   height: 100px;
   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
 }
-.content .inner .tech1 > article:nth-of-type(5) li:nth-of-type(1)::before {
+main .three .inner article ul li:nth-of-type(1)::before {
   background-color: #3c393c;
 }
-.content .inner .tech1 > article:nth-of-type(5) li:nth-of-type(2)::before {
+main .three .inner article ul li:nth-of-type(2)::before {
   background-color: #53585f;
 }
-.content .inner .tech1 > article:nth-of-type(5) li:nth-of-type(3)::before {
+main .three .inner article ul li:nth-of-type(3)::before {
   background-color: #64696f;
 }
-.content .inner .tech1 > article:nth-of-type(5) li:nth-of-type(4)::before {
+main .three .inner article ul li:nth-of-type(4)::before {
   background-color: #ede0d3;
 }
-.content .inner .tech1 > article:nth-of-type(5) li p {
+main .three .inner article ul li p {
   width: 100%;
   height: 100px;
   padding: 0;
   margin-top: 10px;
   text-align: center;
   font: bold 16px/1.5 "Lora";
+  color: #444;
 }
-.content .inner .tech1 > article img {
-  padding: 0 15%;
+main .three .inner .pics {
+  display: flex;
+  justify-content: center;
+}
+main .three .inner .pics .pic {
+  overflow: hidden;
+  margin-right: 20px;
+  width: 280px;
+  height: 300px;
+}
+main .three .inner .pics .pic img {
+  width: 100%;
+  height: 100%;
+}
+main .three .inner .pics .pic img:hover {
+  transform: scale(1.1);
+}
+main .three .inner a {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #444;
+  font: bold 30px/1 "Poppin";
+}
+main .three .inner a:hover {
+  color: #c29c6e;
+  font: italic bold 30px/1 "Poppin";
+}
+main .four {
+  width: 100%;
+  height: 100vh;
+}
+main .four .banner {
   width: 100%;
   height: 500px;
-  object-fit: cover;
 }
-.content .inner .tech1 > article h2 {
-  padding: 30px 15%;
-  font: bold 30px/1.5 "Poppins";
-  color: #333;
-}
-.content .inner .tech1 > article p {
-  padding: 0 15%;
-  font: normal 24px/1.5 "Poppins";
-  color: #333;
-}
-.content .inner .banner {
-  margin-top: 100px;
-  width: 100%;
-  height: 500px;
-}
-.content .inner .banner h2 {
+main .four .banner h2 {
   font: bold 70px/1 "Poppins";
   padding-top: 225px;
   text-align: center;
   color: #fff;
 }
-.content .inner .banner img {
+main .four .banner img {
   width: calc(100vw - 20px);
   height: 500px;
   position: absolute;
@@ -318,14 +447,12 @@ fieldset {
   z-index: -1;
   object-fit: cover;
 }
-.content .inner .tech2 {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+main .four .inner {
+  width: 1180px;
+  margin: 0 auto;
 }
-.content .inner .tech2 .intro {
-  padding: 100px 25% 0 25%;
+main .four .inner .intro {
+  padding: 50px 25% 0 25%;
   font: italic 24px/2 "Poppins";
   color: #333;
   width: 100%;
@@ -333,7 +460,7 @@ fieldset {
   text-align: center;
   margin-bottom: 150px;
 }
-.content .inner .tech2 .intro::before {
+main .four .inner .intro::before {
   content: "";
   display: block;
   width: 200px;
@@ -342,50 +469,77 @@ fieldset {
   transform: translateX(100%);
   margin-bottom: 30px;
 }
-.content .inner .tech2 > article {
-  display: block;
-  width: 380px;
-}
-.content .inner .tech2 > article img {
+main .five {
   width: 100%;
-  height: 400px;
-  object-fit: cover;
+  height: 80vh;
 }
-.content .inner .tech2 > article h2 {
-  margin-top: 50px;
-  text-align: center;
-  font: bold 30px/1.5 "Poppins";
-  color: #333;
+main .five article {
+  opacity: 0;
 }
-
-#mail {
-  width: 100%;
-  margin: 400px 0 100px 0;
+main .five article:nth-of-type(1) {
+  transition: all 1s;
 }
-#mail .inner {
+main .five article:nth-of-type(2) {
+  transition: all 1s 0.3s;
+}
+main .five article:nth-of-type(3) {
+  transition: all 1s 0.6s;
+}
+main .five.on article {
+  opacity: 1;
+}
+main .five .inner {
   width: 1180px;
   margin: 0 auto;
+  position: relative;
 }
-#mail .inner #mailForm {
-  width: 40%;
-  margin: 50px auto;
+main .five .inner .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-#mail .inner p {
+main .five .inner .wrapper article {
+  display: block;
+  width: 33.3333333333%;
+}
+main .five .inner .wrapper article img {
+  width: 100%;
+  padding: 0 10px;
+  margin-top: 50px;
+  height: 300px;
+  object-fit: cover;
+}
+main .five .inner .wrapper article h2 {
+  margin-top: 20px;
+  padding: 0 10px;
   text-align: center;
-  font: bold 30px/1 "Poppins";
+  font: bold 24px/1.5 "Poppins";
+  color: #333;
+}
+main .five .inner #mail {
+  width: 100%;
+  margin: 150px 0 100px 0;
+}
+main .five .inner #mail #mailForm {
+  width: 40%;
+  margin: 30px auto;
+}
+main .five .inner #mail p {
+  text-align: center;
+  font: 24px/1 "Lora";
   color: #444;
 }
-#mail .inner div {
+main .five .inner #mail div {
   width: 100%;
   border-bottom: 1px solid #444;
 }
-#mail .inner div #mailBox {
+main .five .inner #mail div #mailBox {
   width: 80%;
   margin: 0 auto;
   height: 25px;
   border: none;
 }
-#mail .inner div #submit {
+main .five .inner #mail div #submit {
   border: none;
   font: 22px/1.5 "Poppins";
   background-color: #fff;
@@ -395,6 +549,7 @@ fieldset {
 #footer_sub {
   width: 100%;
   padding: 30px;
+  border-top: 2px solid black;
 }
 #footer_sub .inner {
   width: 1180px;
@@ -429,8 +584,9 @@ fieldset {
 }
 .community .community_visual {
   background: url(../img/qna.jpg) no-repeat center/cover;
-  height: 500px;
+  height: 450px;
   object-fit: cover;
+  box-shadow: 2px 1px 10px #222;
 }
 .community .inner {
   padding-top: 100px;
@@ -900,18 +1056,31 @@ fieldset {
   font: bold 24px/1 "Poppins";
   color: #333;
 }
+#header .inner .mainMenu {
+  position: absolute;
+  bottom: 15px;
+  right: -50px;
+}
+#header .inner .mainMenu li {
+  float: left;
+  margin-left: 20px;
+}
+#header .inner .mainMenu li a {
+  font: 20px/1 "Poppins";
+  color: #333;
+}
 #header .inner .util {
   position: absolute;
-  top: 20px;
-  left: -10px;
+  top: 50px;
+  right: -50px;
 }
 #header .inner .util li {
   float: left;
   margin-left: 20px;
 }
 #header .inner .util li a {
-  font: 12px/1 "Poppins";
-  color: #999;
+  font: 20px/1 "Poppins";
+  color: #333;
 }
 #header .inner .btnCall {
   display: none;
@@ -1054,13 +1223,13 @@ fieldset {
 #visual .inner .wrap p {
   position: absolute;
   top: calc(10% + 100px);
-  font: normal 30px/1.5 "Poppins";
+  font: normal 30px/1.5 "Lora";
   color: #222;
 }
 #visual .inner .wrap a {
   position: absolute;
   top: calc(10% + 250px);
-  font: normal 24px/1.5 "Poppins";
+  font: italic 24px/1.5 "Poppins";
   color: #222;
 }
 #visual .inner .wrap a:nth-of-type(2) {
@@ -1166,7 +1335,7 @@ fieldset {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  font: normal 24px/1.5 "Poppins";
+  font: italic bold 24px/1.5 "Poppins";
   color: #333;
   transition: 0.2s;
 }
@@ -1282,8 +1451,8 @@ fieldset {
 #brand .inner a {
   display: inline-block;
   margin-top: 100px;
-  font: normal 24px/1.5 "Poppins";
-  color: #999;
+  font: italic bold 24px/1.5 "Poppins";
+  color: #333;
   transition: 0.2s;
 }
 #brand .inner a:hover {
@@ -1396,8 +1565,8 @@ fieldset {
   display: inline-block;
   margin-top: 20px;
   margin-left: 50px;
-  font: normal 24px/1.5 "Poppins";
-  color: #999;
+  font: italic bold 24px/1.5 "Poppins";
+  color: #333;
   transition: 0.2s;
 }
 #product .inner .wrap a:hover {

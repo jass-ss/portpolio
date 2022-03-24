@@ -4,8 +4,9 @@
   
     .community_visual {
       background: url(../img/qna.jpg) no-repeat center/cover;
-      height: 500px;
-      object-fit: cover;
+      height: 450px;
+      object-fit: cover;    
+      box-shadow: 2px 1px 10px #222;
     }
   
     .inner {

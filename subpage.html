@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Chrome Kitchen - product</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script defer src="js/main.js"></script>
+    <script src="js/anime.js"></script>
+    <script defer src="js/sub.js"></script>
   </head>
   <body>
     <header id="header_sub">
@@ -14,13 +15,19 @@
         <h1><a href="index.html">CHROME KITCHEN</a></h1>
 
         <nav class="menuWeb">
+          <ul class="mainMenu">
+            <li><a href="subpage.html">PRODUCT</a></li>
+            <li><a href="store.html">STORE</a></li>
+            <li><a href="community.html">HELP</a></li>
+            <li><a href="#">GALLERY</a></li>
+          </ul>
+          
           <ul class="util">
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Help</a></li>
             <li><a href="#">Login</a></li>
             <li><a href="join.html">Join</a></li>
           </ul>
         </nav>
+
 
         <!-- 햄버거 버튼 -->
         <a href="#" class="btnCall">
@@ -28,9 +35,10 @@
         </a>
 
         <nav class="menuMo">
-            <h1><a href="index.html">CHROME KITCHEN</a>
-                <span>CHOMING AND TECHNOLOGY</span>
-            </h1>
+          <h1>
+            <a href="#">CHROME KITCHEN</a>
+            <span>CHOMING AND TECHNOLOGY</span>
+          </h1>
 
           <ul id="gnbMo">
             <li><a href="department.html">DEPARTMENT</a></li>
@@ -43,61 +51,99 @@
       </div>
     </header>
 
-    <section class="content">
-      <div class="sub_visual">
-        <div class="text">
-          <h1>PRODUCT & TECHNOLOGY</h1>
-          <p>
-            intelligent technologies designed to maximize your output, improve
-            your performance and give shape to your ambitions
-          </p>
-        </div>
-      </div>
 
-      <div class="inner">
-        <div class="tech1">
+    <main class="content">
+      <section class="one on">
+        <div class="sub_visual">
+          <div class="text">
+            <h1>PRODUCT & TECHNOLOGY</h1>
+            <p>
+              intelligent technologies designed to maximize your output, improve
+              your performance and give shape to your ambitions
+            </p>
+          </div>
+        </div>
+
+        <div class="inner">
           <p class="intro">
             A complete offering for high technology collections, articulated in
             a rich palette of colours which, alongside white and black, ranges
             over sorbet colours, metallic tones and classic saturated colours.
           </p>
+        </div>
+      </section>
+
+      <section class="two1">
+        <div class="inner">
+          <div class="wrapper">
+            <article>
+              <img src="./img/product6.png" alt="silver stove" />
+              <h2>A QUESTION OF STYLE</h2>
+              <p>
+                Every collection has a soul. Which recounts a very personal
+                experience - that of the person who lives with it.
+              </p>
+            </article>
+
+            <article>
+              <img src="./img/product4.jpg" alt="" />
+              <h2>CLEAN LINES AND RIGOROUS LOGIC</h2>
+              <p>
+                translate into the pleasure of living and working in a
+                well-organised, functional and yet not austere kitchen. you can
+                make the most of your space
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="two2">
+        <div class="inner">
+          <div class="wrapper">
+            <article>
+              <img src="./img/product2.jpg" alt="hand mixer" />
+              <h2>MANAGING EACH PREPARATION WITH SIMPLICITY</h2>
+              <p>
+                In these mechanical and laborious procedures, to achieve
+                excellence, it is better to help our hands
+              </p>
+            </article>
+
+            <article>
+              <img src="./img/product5.jpg" alt="shining stove" />
+              <h2>GLOSSY FINISH</h2>
+              <p>
+                perfect to catalyze as much light as possible in the kitchen
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="three">
+        <div class="inner">
+          <h2>SIGNATURE COLOR</h2>
+          <div class="pics">
+            <div class="pic">
+              <img src="./img/black.jpg" alt="" />
+            </div>
+
+            <div class="pic">
+              <img src="./img/gray2.jpg" alt="" />
+            </div>
+
+            <div class="pic">
+              <img src="./img/gray.jpg" alt="" />
+            </div>
+
+            <div class="pic">
+              <img src="./img/ivory.jpg" alt="" />
+            </div>
+          </div>
 
           <article>
-            <img src="./img/product6.png" alt="silver stove" />
-            <h2>A QUESTION OF STYLE</h2>
-            <p>
-              Every collection has a soul. Which recounts a very personal
-              experience - that of the person who lives with it.
-            </p>
-          </article>
-
-          <article>
-            <img src="./img/product4.jpg" alt="" />
-            <h2>CLEAN LINES AND RIGOROUS LOGIC</h2>
-            <p>
-              translate into the pleasure of living and working in a
-              well-organised, functional and yet not austere kitchen. you can
-              make the most of your space
-            </p>
-          </article>
-
-          <article>
-            <img src="./img/product2.jpg" alt="hand mixer" />
-            <h2>MANAGING EACH PREPARATION WITH SIMPLICITY</h2>
-            <p>
-              In these mechanical and laborious procedures, to achieve
-              excellence, it is better to help our hands
-            </p>
-          </article>
-
-          <article>
-            <img src="./img/product5.jpg" alt="shining stove" />
-            <h2>GLOSSY FINISH</h2>
-            <p>perfect to catalyze as much light as possible in the kitchen</p>
-          </article>
-
-          <article>
-            <h2>SIGNATURE COLOR</h2>
+            
             <ul>
               <li>
                 <p>
@@ -129,14 +175,17 @@
               </li>
             </ul>
           </article>
-        </div>
 
+          <a href="#"> GO TO GET </a>
+        </div>
+      </section>
+
+      <section class="four">
         <div class="banner">
           <img src="./img/banner4.jpg" alt="" />
           <h2>TECHNICAL SERVICES</h2>
         </div>
-
-        <div class="tech2">
+        <div class="inner">
           <p class="intro">
             Do you have a busy period of work in your business and you do not
             want to get caught unprepared? With the Preventive Maintenance
@@ -144,44 +193,48 @@
             partners, you will be prepared for every upcoming business
             opportunity!
           </p>
-
-          <article>
-            <img src="./img/service1.jpg" alt=" free service for 1 year" />
-            <h2>1 Year of dedicated care</h2>
-          </article>
-
-          <article>
-            <img src="./img/service2.jpg" alt="a man who's checking" />
-            <h2>Planned maintenance program</h2>
-          </article>
-
-          <article>
-            <img src="./img/service3.jpg" alt="a car with service partner" />
-            <h2>Repairing service: whenever and wherever you want.</h2>
-          </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="mail">
-      <div class="inner">
-        <p>Sign up to our product newsletter</p>
-        <form action="#" id="mailForm">
-          <fieldset>
-            <legend class="h">메일링 신청</legend>
-            <div>
-              <input
-                type="text"
-                id="mailBox"
-                placeholder="your Email"
-                required
-              />
-              <input type="submit" id="submit" value="submit" />
-            </div>
-          </fieldset>
-        </form>
-      </div>
-    </section>
+      <section class="five">
+        <div class="inner">
+          <div class="wrapper">
+            <article>
+              <img src="./img/service1.jpg" alt=" free service for 1 year" />
+              <h2>1 Year of dedicated care</h2>
+            </article>
+
+            <article>
+              <img src="./img/service2.jpg" alt="a man who's checking" />
+              <h2>Planned maintenance program</h2>
+            </article>
+
+            <article>
+              <img src="./img/service3.jpg" alt="a car with service partner" />
+              <h2>Repairing service: whenever and wherever you want.</h2>
+            </article>
+          </div>
+
+          <div id="mail">
+            <p>Sign up to our product newsletter</p>
+            <form action="#" id="mailForm">
+              <fieldset>
+                <legend class="h">메일링 신청</legend>
+                <div>
+                  <input
+                    type="text"
+                    id="mailBox"
+                    placeholder="your Email"
+                    required
+                  />
+                  <input type="submit" id="submit" value="submit" />
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer id="footer_sub">
       <div class="inner">

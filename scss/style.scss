@@ -24,22 +24,37 @@
         color: #333;
       }
     }
-
-    .util {
+    .mainMenu{
       position: absolute;
-      top: 20px;
-      left: -10px;
+      bottom: 15px;
+      right: -50px;
 
       li {
         float: left;
         margin-left: 20px;
 
         a {
-          font: 12px/1 "Poppins";
-          color: #999;
+          font: 20px/1 "Poppins";
+          color: #333;
         }
       }
     }
+    .util {
+      position: absolute;
+      top: 50px;
+      right: -50px;
+
+      li {
+        float: left;
+        margin-left: 20px;
+
+        a {
+          font: 20px/1 "Poppins";
+          color: #333;
+        }
+      }
+    }
+
 
     //햄버거 버튼
     .btnCall {
@@ -193,13 +208,13 @@
       p {
         position: absolute;
         top: calc(10% + 100px);
-        font: normal 30px/1.5 "Poppins";
+        font: normal 30px/1.5 "Lora";
         color: #222;
       }
       a {
         position: absolute;
         top: calc(10% + 250px);
-        font: normal 24px/1.5 "Poppins";
+        font: italic 24px/1.5 "Poppins";
         color: #222;
 
         &:nth-of-type(2){
@@ -312,7 +327,7 @@
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
-      font: normal 24px/1.5 "Poppins";
+      font: italic bold 24px/1.5 "Poppins";
       color: #333;
       transition: 0.2s;
 
@@ -433,8 +448,8 @@
     a {
       display: inline-block; //a태그 위형제 요소들이 float이라서 display:block하면 제일 위로 간다.
       margin-top: 100px;
-      font: normal 24px/1.5 "Poppins";
-      color: #999;
+      font: italic bold 24px/1.5 "Poppins";
+      color: #333;
       transition: 0.2s;
 
       &:hover {
@@ -551,8 +566,8 @@
         display: inline-block;
         margin-top: 20px;
         margin-left: 50px;
-        font: normal 24px/1.5 "Poppins";
-        color: #999;
+        font: italic bold 24px/1.5 "Poppins";
+        color: #333;
         transition: 0.2s;
 
         &:hover {
