@@ -19,14 +19,14 @@
       position: absolute;
       top: 35%;
       right: 25%;
-      font: bold 70px/1 "arial";
+      font: bold 70px/1 "Poppins";
       color: #222;
     }
     p {
       position: absolute;
       top: 55%;
       right: 25%;
-      font: normal 32px/1.5 "arial";
+      font: normal 32px/1.5 "Lora";
       color: #222;
     }
   }
@@ -37,7 +37,6 @@
     position: relative;
 
     .wrap {
-      padding-bottom: 30px;
       border-bottom: 2px solid black;
       display: flex;
       height: 300px;
@@ -54,11 +53,11 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        font: 24px/1 "Lora";
+        font: 24px/1 "arial";
         color: #222;
 
         .category{ 
-          min-width: 20%;
+          min-width: 25%;
           &.on a {
             color: burlywood;
           }
@@ -72,7 +71,6 @@
           display: flex;
           ul {
             font-size: 24px;
-            font-family: "Lora";
           }
           #appliance {
             display: inline-block;
@@ -81,7 +79,7 @@
             }
             li {
               display: inline-block;
-              font: 24px/1 "Lora";
+              font: 24px/1 "arial";
               padding-left: 50px;
               &.on a {
                 color: burlywood;
@@ -96,7 +94,7 @@
             }
             li {
               display: inline-block;
-              font: 24px/1 "Lora";
+              font: 24px/1 "arial";
               padding-left: 60px;
               &.on a {
                 color: burlywood;
@@ -124,6 +122,10 @@
         cursor: pointer;
         box-shadow: 1px 1px 10px #22222230;
 
+        &:hover{
+          filter: contrast(0.9);
+        }
+
         .txt {
           text-align: center;
           font: 22px/1.5 "Lora";
@@ -136,7 +138,7 @@
 
         img {
           width: 100%;
-          padding: 0 10px;
+          padding: 10px;
           height: 240px;
         }
       }
@@ -225,7 +227,7 @@
           position: absolute;
           top: 55%;   
           left: calc(50% + 100px);
-          font: 28px/1 "poppin";
+          font: bold 28px/1 "poppins";
           color: #222;
           padding: 20px;
           border-bottom: 3px solid #222;
@@ -238,8 +240,8 @@
         right: 50%;
         bottom: 5%;
         transform: translateX(50%);
-        font: normal 40px/1 "arial";
-        border: 3px solid #222;
+        font: bold 30px/1 "Poppins";
+        border: 2px solid #222;
         color: #222;
         border-radius: 5px;
         padding: 10px;

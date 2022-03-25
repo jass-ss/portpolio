@@ -5,7 +5,7 @@
 @import "community.scss";
 @import "join.scss";
 @import "store.scss";
-@import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Nanum+Gothic+Coding&family=Poppins:wght@300&display=swap');
 
 #header {
   width: 100%;
@@ -22,7 +22,7 @@
 
       > a {
         font: bold 24px/1 "Poppins";
-        color: #333;
+        color: #000;
       }
     }
     .mainMenu{
@@ -35,8 +35,8 @@
         margin-left: 20px;
 
         a {
-          font: 20px/1 "Poppins";
-          color: #333;
+          font: bold 20px/1 "Poppins";
+          color: #555;
         }
       }
     }
@@ -215,8 +215,8 @@
       a {
         position: absolute;
         top: calc(10% + 250px);
-        font: italic 24px/1.5 "Poppins";
-        color: #222;
+        font: italic bold 24px/1.5 "Poppins";
+        color: #333;
 
         &:nth-of-type(2){
           top: -15%; left: 10%;
@@ -438,7 +438,7 @@
 
 #brand {
   width: 100%;
-  padding: 200px 0;
+  margin: 200px 0 300px;
   text-align: center;
 
   & article{
@@ -449,7 +449,7 @@
   }
 
   &.on article{
-    filter: contrast(100%) brightness(1.2);
+    filter: contrast(120%) brightness(1.1);
     &:nth-of-type(3){ filter: contrast(100%) brightness(1.4);}
   }
 
@@ -499,7 +499,9 @@
       }
     }
     a {
-      display: inline-block; //a태그 위형제 요소들이 float이라서 display:block하면 제일 위로 간다.
+      position: absolute;
+      bottom: -20%; left: 50%; transform: translateX(-50%);
+      display:block; //a태그 위형제 요소들이 float이라서 display:block하면 제일 위로 간다.
       margin-top: 100px;
       font: italic bold 24px/1.5 "Poppins";
       color: #333;

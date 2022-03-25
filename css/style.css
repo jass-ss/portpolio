@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Nanum+Gothic+Coding&family=Poppins:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -49,7 +49,7 @@ fieldset {
 }
 #header_sub .inner > h1 > a {
   font: bold 24px/1 "Poppins";
-  color: #333;
+  color: #000;
 }
 #header_sub .inner .mainMenu {
   position: absolute;
@@ -61,8 +61,8 @@ fieldset {
   margin-left: 20px;
 }
 #header_sub .inner .mainMenu li a {
-  font: 20px/1 "Poppins";
-  color: #333;
+  font: bold 20px/1 "Poppins";
+  color: #555;
 }
 #header_sub .inner .util {
   position: absolute;
@@ -419,12 +419,12 @@ main .three .inner a {
   bottom: -5%;
   left: 50%;
   transform: translateX(-50%);
-  color: #444;
-  font: bold 30px/1 "Poppin";
+  color: #333;
+  font: bold 30px/1 "Poppins";
 }
 main .three .inner a:hover {
   color: #c29c6e;
-  font: italic bold 30px/1 "Poppin";
+  font: italic bold 30px/1 "Poppins";
 }
 main .four {
   width: 100%;
@@ -472,7 +472,7 @@ main .four .inner .intro::before {
 }
 main .five {
   width: 100%;
-  height: 80vh;
+  height: 75vh;
 }
 main .five article {
   opacity: 0;
@@ -507,7 +507,7 @@ main .five .inner .wrapper article img {
   width: 100%;
   padding: 0 10px;
   margin-top: 50px;
-  height: 300px;
+  height: 250px;
   object-fit: cover;
 }
 main .five .inner .wrapper article h2 {
@@ -550,6 +550,7 @@ main .five .inner #mail div #submit {
 #footer_sub {
   width: 100%;
   padding: 30px;
+  border-top: 3px solid #222;
 }
 #footer_sub .inner {
   width: 1180px;
@@ -694,7 +695,6 @@ main .five .inner #mail div #submit {
   margin: 10px;
 }
 .community .inner #pagination .send {
-  width: 100%;
   text-align: center;
   margin: 100px 0 150px;
 }
@@ -858,6 +858,7 @@ main .five .inner #mail div #submit {
   }
   .community .inner #pagination .send {
     margin: 30px 0 50px;
+    text-decoration: underline;
   }
   .community .inner #pagination .send p {
     font: 16px/1.2 "Poppins";
@@ -870,6 +871,7 @@ main .five .inner #mail div #submit {
   width: 100%;
   padding: 200px 0;
   background: url(../img/bg2.jpg) no-repeat center/cover;
+  font-family: "Poppins";
   filter: grayscale(50%);
   /*.join_visual{
       width: 100%; height: 400px;
@@ -885,10 +887,10 @@ main .five .inner #mail div #submit {
 }
 .join .inner h1 {
   padding-top: 100px;
-  font: bold 50px/1 "Poppin";
+  font: bold 50px/1 "Poppins";
 }
 .join .inner h1 span {
-  font: normal 30px/1 "Poppin";
+  font: normal 30px/1 "Poppins";
 }
 .join .inner form {
   width: 100%;
@@ -899,7 +901,7 @@ main .five .inner #mail div #submit {
   resize: none;
   margin: 0 auto;
   display: block;
-  font: normal 16px/1.35 "Poppin";
+  font: normal 16px/1.35 "Poppins";
   margin-bottom: 30px;
 }
 .join .inner form .agreement {
@@ -921,19 +923,21 @@ main .five .inner #mail div #submit {
 .join .inner form table th {
   width: 30%;
   padding-left: 100px;
-  font: bold 20px/1.35 "Poppin";
+  font: bold 20px/1.35 "Poppins";
 }
 .join .inner form table th #submit {
   position: absolute;
   bottom: -100px;
   right: 50%;
   margin: 0 10px;
+  padding: 2px;
 }
 .join .inner form table th #reset {
   position: absolute;
   bottom: -100px;
   left: 50%;
   margin: 0 10px;
+  padding: 2px;
 }
 .join .inner form table td {
   padding: 10px 0 10px 50px;
@@ -948,6 +952,7 @@ main .five .inner #mail div #submit {
 }
 .join .inner form table td button {
   margin: 0 10px;
+  padding: 2px;
 }
 .join .inner form table td #phone2, .join .inner form table td #phone3 {
   width: 20%;
@@ -975,14 +980,14 @@ main .five .inner #mail div #submit {
   position: absolute;
   top: 35%;
   right: 25%;
-  font: bold 70px/1 "arial";
+  font: bold 70px/1 "Poppins";
   color: #222;
 }
 .store_visual p {
   position: absolute;
   top: 55%;
   right: 25%;
-  font: normal 32px/1.5 "arial";
+  font: normal 32px/1.5 "Lora";
   color: #222;
 }
 
@@ -992,7 +997,6 @@ main .inner {
   position: relative;
 }
 main .inner .wrap {
-  padding-bottom: 30px;
   border-bottom: 2px solid black;
   display: flex;
   height: 300px;
@@ -1008,11 +1012,11 @@ main .inner .wrap .list {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  font: 24px/1 "Lora";
+  font: 24px/1 "arial";
   color: #222;
 }
 main .inner .wrap .list .category {
-  min-width: 20%;
+  min-width: 25%;
 }
 main .inner .wrap .list .category.on a {
   color: burlywood;
@@ -1027,7 +1031,6 @@ main .inner .wrap .list .cate_cookWear {
 main .inner .wrap .list .cate_appliance ul,
 main .inner .wrap .list .cate_cookWear ul {
   font-size: 24px;
-  font-family: "Lora";
 }
 main .inner .wrap .list .cate_appliance #appliance,
 main .inner .wrap .list .cate_cookWear #appliance {
@@ -1040,7 +1043,7 @@ main .inner .wrap .list .cate_cookWear #appliance a {
 main .inner .wrap .list .cate_appliance #appliance li,
 main .inner .wrap .list .cate_cookWear #appliance li {
   display: inline-block;
-  font: 24px/1 "Lora";
+  font: 24px/1 "arial";
   padding-left: 50px;
 }
 main .inner .wrap .list .cate_appliance #appliance li.on a,
@@ -1058,7 +1061,7 @@ main .inner .wrap .list .cate_cookWear #cookWear a {
 main .inner .wrap .list .cate_appliance #cookWear li,
 main .inner .wrap .list .cate_cookWear #cookWear li {
   display: inline-block;
-  font: 24px/1 "Lora";
+  font: 24px/1 "arial";
   padding-left: 60px;
 }
 main .inner .wrap .list .cate_appliance #cookWear li.on a,
@@ -1083,6 +1086,9 @@ main .inner .store_product article {
   cursor: pointer;
   box-shadow: 1px 1px 10px #22222230;
 }
+main .inner .store_product article:hover {
+  filter: contrast(0.9);
+}
 main .inner .store_product article .txt {
   text-align: center;
   font: 22px/1.5 "Lora";
@@ -1094,7 +1100,7 @@ main .inner .store_product article .txt li:nth-of-type(1) {
 }
 main .inner .store_product article img {
   width: 100%;
-  padding: 0 10px;
+  padding: 10px;
   height: 240px;
 }
 main .inner aside {
@@ -1189,7 +1195,7 @@ main .inner aside .aside_inner a {
   position: absolute;
   top: 55%;
   left: calc(50% + 100px);
-  font: 28px/1 "poppin";
+  font: bold 28px/1 "poppins";
   color: #222;
   padding: 20px;
   border-bottom: 3px solid #222;
@@ -1201,8 +1207,8 @@ main .inner aside span {
   right: 50%;
   bottom: 5%;
   transform: translateX(50%);
-  font: normal 40px/1 "arial";
-  border: 3px solid #222;
+  font: bold 30px/1 "Poppins";
+  border: 2px solid #222;
   color: #222;
   border-radius: 5px;
   padding: 10px;
@@ -1226,7 +1232,7 @@ main .inner aside span {
 }
 #header .inner > h1 > a {
   font: bold 24px/1 "Poppins";
-  color: #333;
+  color: #000;
 }
 #header .inner .mainMenu {
   position: absolute;
@@ -1238,8 +1244,8 @@ main .inner aside span {
   margin-left: 20px;
 }
 #header .inner .mainMenu li a {
-  font: 20px/1 "Poppins";
-  color: #333;
+  font: bold 20px/1 "Poppins";
+  color: #555;
 }
 #header .inner .util {
   position: absolute;
@@ -1401,8 +1407,8 @@ main .inner aside span {
 #visual .inner .wrap a {
   position: absolute;
   top: calc(10% + 250px);
-  font: italic 24px/1.5 "Poppins";
-  color: #222;
+  font: italic bold 24px/1.5 "Poppins";
+  color: #333;
 }
 #visual .inner .wrap a:nth-of-type(2) {
   top: -15%;
@@ -1629,7 +1635,7 @@ main .inner aside span {
 
 #brand {
   width: 100%;
-  padding: 200px 0;
+  margin: 200px 0 300px;
   text-align: center;
 }
 #brand article {
@@ -1645,7 +1651,7 @@ main .inner aside span {
   transition: all 0.8s 1s;
 }
 #brand.on article {
-  filter: contrast(100%) brightness(1.2);
+  filter: contrast(120%) brightness(1.1);
 }
 #brand.on article:nth-of-type(3) {
   filter: contrast(100%) brightness(1.4);
@@ -1694,7 +1700,11 @@ main .inner aside span {
   color: #444;
 }
 #brand .inner a {
-  display: inline-block;
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
   margin-top: 100px;
   font: italic bold 24px/1.5 "Poppins";
   color: #333;

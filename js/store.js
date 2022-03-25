@@ -31,6 +31,7 @@ window.addEventListener("load", () => {
 const article = document.querySelectorAll("section article");
 const aside = document.querySelector("aside");
 const txt = aside.querySelectorAll(".txt li");
+const wrapper = aside.querySelector('.wrapper');
 console.log(txt);
 const link = aside.querySelector("a");
 const img = aside.querySelector("img");
@@ -41,6 +42,9 @@ const _left = aside.querySelector(".left");
 const _right = aside.querySelector(".right");
 
 closeBtn.addEventListener("click", () => {
+
+  wrapper.style.display = 'none';
+
   new Anim(aside, {
     prop: "bottom",
     value: "-100%",
@@ -120,6 +124,9 @@ closeBtn.addEventListener("click", () => {
 
 for (let el of article) {
   el.addEventListener("click", (e) => {
+    
+    wrapper.style.display = 'block';
+
     const innerTxt = e.currentTarget.querySelectorAll(".txt li");
     console.log(innerTxt);
     txt[0].innerText = innerTxt[0].innerText;
@@ -151,7 +158,7 @@ for (let el of article) {
                       callback: () => {*/
                 new Anim(_right, {
                   prop: "height",
-                  value: "45%",
+                  value: "45.5%",
                   duration: 300,
                   callback: () => {
                     /*new Anim(_right, {
@@ -202,7 +209,7 @@ for (let el of article) {
                                             new Anim(link, {
                                               prop: "opacity",
                                               value: 1,
-                                              duration: 300,
+                                              duration: 200,
                                               callback: () => {},
                                             });
                                           },
