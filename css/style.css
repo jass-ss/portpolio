@@ -886,6 +886,11 @@ main .five .inner #mail div #submit {
 .join .inner .wrap {
   width: 100%;
 }
+.join .inner .wrap p {
+  font-size: 14px;
+  margin-top: 10px;
+  color: brown;
+}
 .join .inner .wrap h1 {
   padding: 100px;
   font: bold 50px/1 "Poppins";
@@ -902,25 +907,21 @@ main .five .inner #mail div #submit {
   flex-direction: row-reverse;
   background: #f8f5f0;
 }
-.join .inner .wrap form .wrapper1 label[for=terms] {
+.join .inner .wrap form .wrapper1 .wrap {
   width: 50%;
   padding: 5% 5% 5% 0%;
 }
-.join .inner .wrap form .wrapper1 label[for=terms] textarea {
+.join .inner .wrap form .wrapper1 .wrap textarea {
   width: 100%;
   height: 450px;
   resize: none;
   font: normal 16px/1.35 "Poppins";
   margin-bottom: 30px;
 }
-.join .inner .wrap form .wrapper1 .agreement {
+.join .inner .wrap form .wrapper1 .wrap .agreement {
   text-align: center;
-  position: absolute;
-  bottom: 48%;
-  left: 75%;
-  transform: translateX(-50%);
 }
-.join .inner .wrap form .wrapper1 .agreement label[for=agree] {
+.join .inner .wrap form .wrapper1 .wrap .agreement label[for=agree] {
   font-size: 12px;
 }
 .join .inner .wrap form .wrapper1 table {
