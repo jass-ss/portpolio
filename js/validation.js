@@ -14,6 +14,7 @@ btnSubmit.addEventListener('click', e=>{
     if(!isNum('phone2','phone3')){e.preventDefault}
     if(!isBirth('birth')){e.preventDefault}
     if(!isEmail('email')){e.preventDefault} 
+    if(!isAgree("agreement")) e.preventDefault(); 
 
 })
 
@@ -184,6 +185,22 @@ function isEmail(res){
         const errMsgs = email.closest('td').querySelectorAll('p');
         if(errMsgs.length>0){errMsgs.forEach(el=>el.remove())}
         email.closest('td').append(errMsg);
+        return false;
+    }
+}
+
+function isAgree(res){
+    const agreement = form.querySelector(`input[name=${res}]`);
+    if(agreement.checked){
+        const errMsgs = agreement.closest('div').querySelectorAll('p');
+        if(errMsgs.length>0){errMsgs.forEach(el=>el.remove())}
+        return true
+    }else{
+        const errMsg = document.createElement('p');
+        errMsg.append('약관에 동의해주세요')
+        const errMsgs = agreement.closest('div').querySelectorAll('p');
+        if(errMsgs.length>0){errMsgs.forEach(el=>el.remove())}
+        agreement.closest('div').append(errMsg);
         return false;
     }
 }
