@@ -54,7 +54,7 @@ fieldset {
 #header_sub .inner .mainMenu {
   position: absolute;
   bottom: 15px;
-  right: -50px;
+  right: 50px;
 }
 #header_sub .inner .mainMenu li {
   float: left;
@@ -67,7 +67,7 @@ fieldset {
 #header_sub .inner .util {
   position: absolute;
   top: 50px;
-  right: -50px;
+  right: 50px;
 }
 #header_sub .inner .util li {
   float: left;
@@ -869,96 +869,162 @@ main .five .inner #mail div #submit {
 }
 .join {
   width: 100%;
-  padding: 200px 0;
-  background: url(../img/bg2.jpg) no-repeat center/cover;
+  margin-bottom: 100px;
   font-family: "Poppins";
-  filter: grayscale(50%);
+  font-size: 16px;
   /*.join_visual{
-      width: 100%; height: 400px;
-      border: 1px solid black;
-   }*/
+        width: 100%; height: 400px;
+        border: 1px solid black;
+     }*/
 }
 .join .inner {
   width: 1180px;
   margin: 0 auto;
   position: relative;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.767);
 }
-.join .inner h1 {
-  padding-top: 100px;
-  font: bold 50px/1 "Poppins";
-}
-.join .inner h1 span {
-  font: normal 30px/1 "Poppins";
-}
-.join .inner form {
+.join .inner .wrap {
   width: 100%;
 }
-.join .inner form textarea {
-  width: 80%;
-  height: 250px;
+.join .inner .wrap h1 {
+  padding: 100px;
+  font: bold 50px/1 "Poppins";
+  /*span{
+          font:normal 30px/1 'Poppins';
+      }*/
+}
+.join .inner .wrap form {
+  width: 100%;
+}
+.join .inner .wrap form .wrapper1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  background: #f8f5f0;
+}
+.join .inner .wrap form .wrapper1 label[for=terms] {
+  width: 50%;
+  padding: 5% 5% 5% 0%;
+}
+.join .inner .wrap form .wrapper1 label[for=terms] textarea {
+  width: 100%;
+  height: 450px;
   resize: none;
-  margin: 0 auto;
-  display: block;
   font: normal 16px/1.35 "Poppins";
   margin-bottom: 30px;
 }
-.join .inner form .agreement {
+.join .inner .wrap form .wrapper1 .agreement {
   text-align: center;
+  position: absolute;
+  bottom: 48%;
+  left: 75%;
+  transform: translateX(-50%);
 }
-.join .inner form .agreement label[for=agree] {
+.join .inner .wrap form .wrapper1 .agreement label[for=agree] {
   font-size: 12px;
 }
-.join .inner form table {
-  width: 70%;
-  margin: 50px auto 70px;
-  padding: 30px;
+.join .inner .wrap form .wrapper1 table {
+  width: 50%;
+  margin: 50px 50px 50px;
+  padding: 50px;
   text-align: left;
-  position: relative;
 }
-.join .inner form table:nth-of-type(2) {
-  margin-bottom: 200px;
-}
-.join .inner form table th {
+.join .inner .wrap form .wrapper1 table th {
   width: 30%;
-  padding-left: 100px;
-  font: bold 20px/1.35 "Poppins";
+  padding-left: 50px;
+  font: bold 16px/1.35 "Poppins";
 }
-.join .inner form table th #submit {
+.join .inner .wrap form .wrapper1 table th #submit {
   position: absolute;
-  bottom: -100px;
+  bottom: 0px;
+  background: #a7a39e;
   right: 50%;
+  color: white;
   margin: 0 10px;
-  padding: 2px;
+  border: none;
+  padding: 10px;
 }
-.join .inner form table th #reset {
+.join .inner .wrap form .wrapper1 table th #reset {
   position: absolute;
-  bottom: -100px;
+  bottom: 0px;
+  background: #a7a39e;
   left: 50%;
+  color: white;
   margin: 0 10px;
-  padding: 2px;
+  border: none;
+  padding: 10px;
 }
-.join .inner form table td {
-  padding: 10px 0 10px 50px;
+.join .inner .wrap form .wrapper1 table td {
+  padding: 10px 0 10px 0px;
 }
-.join .inner form table td #id, .join .inner form table td #pwd1, .join .inner form table td #pwd2 {
-  width: 70%;
+.join .inner .wrap form .wrapper1 table td #id,
+.join .inner .wrap form .wrapper1 table td #pwd1,
+.join .inner .wrap form .wrapper1 table td #pwd2 {
+  width: 100%;
   height: 30px;
   font: 16px "arial";
 }
-.join .inner form table td #name {
+.join .inner .wrap form .wrapper1 table td #name {
   width: 30%;
 }
-.join .inner form table td button {
+.join .inner .wrap form .wrapper1 table td #address {
+  width: 50%;
+}
+.join .inner .wrap form .wrapper1 table td button {
   margin: 0 10px;
   padding: 2px;
+  font-size: 20px;
 }
-.join .inner form table td #phone2, .join .inner form table td #phone3 {
+.join .inner .wrap form .wrapper1 table td #phone2,
+.join .inner .wrap form .wrapper1 table td #phone3 {
   width: 20%;
 }
-.join .inner form table td label[for=sms1], .join .inner form table td label[for=sms2] {
+.join .inner .wrap form .wrapper1 table td label[for=sms1],
+.join .inner .wrap form .wrapper1 table td label[for=sms2] {
   margin-right: 10px;
+}
+.join .inner .wrap form .wrapper2 {
+  position: relative;
+  display: flex;
+  text-align: left;
+  margin: 100px 0;
+  background: #f8f5f0;
+}
+.join .inner .wrap form .wrapper2 h2 {
+  position: absolute;
+  left: 70%;
+  top: 50px;
+  transform: translateX(-50%);
+}
+.join .inner .wrap form .wrapper2 table {
+  width: 60%;
+  margin: 150px 0 150px 100px;
+}
+.join .inner .wrap form .wrapper2 table tr:nth-of-type(1) td {
+  padding: 0;
+}
+.join .inner .wrap form .wrapper2 table th {
+  padding: 0;
+}
+.join .inner .wrap form .wrapper2 table td {
+  padding: 10px 0px;
+}
+.join .inner .wrap form .wrapper2 table button {
+  margin: 0 10px;
+  padding: 2px;
+  font-size: 20px;
+}
+.join .inner .wrap form .wrapper2 table select {
+  font-size: 20px;
+}
+.join .inner .wrap form .wrapper2 .pic {
+  width: 50%;
+  font-size: 0;
+}
+.join .inner .wrap form .wrapper2 .pic img {
+  width: 100%;
+  height: 450px;
+  padding: 50px 0px 0px 80px;
 }
 
 .store img {
@@ -1012,7 +1078,7 @@ main .inner .wrap .list {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  font: 24px/1 "arial";
+  font: 20px/1 "arial";
   color: #222;
 }
 main .inner .wrap .list .category {
@@ -1043,7 +1109,7 @@ main .inner .wrap .list .cate_cookWear #appliance a {
 main .inner .wrap .list .cate_appliance #appliance li,
 main .inner .wrap .list .cate_cookWear #appliance li {
   display: inline-block;
-  font: 24px/1 "arial";
+  font: 20px/1 "arial";
   padding-left: 50px;
 }
 main .inner .wrap .list .cate_appliance #appliance li.on a,
@@ -1061,7 +1127,7 @@ main .inner .wrap .list .cate_cookWear #cookWear a {
 main .inner .wrap .list .cate_appliance #cookWear li,
 main .inner .wrap .list .cate_cookWear #cookWear li {
   display: inline-block;
-  font: 24px/1 "arial";
+  font: 20px/1 "arial";
   padding-left: 60px;
 }
 main .inner .wrap .list .cate_appliance #cookWear li.on a,
@@ -1237,7 +1303,7 @@ main .inner aside span {
 #header .inner .mainMenu {
   position: absolute;
   bottom: 15px;
-  right: -50px;
+  right: 50px;
 }
 #header .inner .mainMenu li {
   float: left;
@@ -1250,7 +1316,7 @@ main .inner aside span {
 #header .inner .util {
   position: absolute;
   top: 50px;
-  right: -50px;
+  right: 50px;
 }
 #header .inner .util li {
   float: left;
