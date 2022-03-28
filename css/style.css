@@ -580,6 +580,11 @@ main .five .inner #mail div #submit {
   color: #222;
 }
 
+@media screen and (max-width: 1179px) {
+  #footer_sub .inner {
+    width: 100%;
+  }
+}
 .community {
   width: 100%;
 }
@@ -1028,6 +1033,95 @@ main .five .inner #mail div #submit {
   padding: 50px 0px 0px 80px;
 }
 
+@media screen and (max-width: 1179px) {
+  .join .inner {
+    width: 100%;
+  }
+  .join .inner .wrap h1 {
+    padding: 100px;
+    font: bold 5vmin/1 "Poppins";
+    /*span{
+            font:normal 30px/1 'Poppins';
+        }*/
+  }
+  .join .inner .wrap form .wrapper1 {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .join .inner .wrap form .wrapper1 .wrap {
+    width: 100%;
+    padding: 5%;
+  }
+  .join .inner .wrap form .wrapper1 table {
+    width: 100%;
+    margin: 50px 0px 50px;
+    padding: 50px;
+    text-align: left;
+  }
+  .join .inner .wrap form .wrapper1 table th {
+    padding-left: 70px;
+  }
+  .join .inner .wrap form .wrapper1 table td {
+    width: 70%;
+    padding: 10px 0 10px 50px;
+  }
+  .join .inner .wrap form .wrapper1 table td #id,
+.join .inner .wrap form .wrapper1 table td #pwd1,
+.join .inner .wrap form .wrapper1 table td #pwd2 {
+    width: 70%;
+  }
+  .join .inner .wrap form .wrapper1 table td #name {
+    width: 30%;
+  }
+  .join .inner .wrap form .wrapper1 table td #address {
+    width: 50%;
+  }
+  .join .inner .wrap form .wrapper1 table td #phone2,
+.join .inner .wrap form .wrapper1 table td #phone3 {
+    width: 20%;
+  }
+  .join .inner .wrap form .wrapper1 table td label[for=sms1],
+.join .inner .wrap form .wrapper1 table td label[for=sms2] {
+    margin-right: 10px;
+  }
+  .join .inner .wrap form .wrapper2 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: left;
+    margin: 100px 0;
+    background: #f8f5f0;
+  }
+  .join .inner .wrap form .wrapper2 h2 {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+  }
+  .join .inner .wrap form .wrapper2 table {
+    width: 80%;
+    margin: 0px 0 50px 100px;
+  }
+  .join .inner .wrap form .wrapper2 table tr:nth-of-type(1) td {
+    padding: 0;
+  }
+  .join .inner .wrap form .wrapper2 table th {
+    padding: 0;
+  }
+  .join .inner .wrap form .wrapper2 table td {
+    padding: 10px 0px;
+  }
+  .join .inner .wrap form .wrapper2 .pic {
+    width: 100%;
+    font-size: 0;
+  }
+  .join .inner .wrap form .wrapper2 .pic img {
+    width: 100%;
+    height: 450px;
+    padding: 100px 50px 50px;
+  }
+}
 .store img {
   object-fit: cover;
 }
@@ -1709,13 +1803,13 @@ main .inner aside span {
   filter: contrast(50%);
 }
 #brand article:nth-of-type(1) {
-  transition: all 0.8s;
+  transition: all 0.3s;
 }
 #brand article:nth-of-type(2) {
-  transition: all 0.8s 0.5s;
+  transition: all 0.5s 0.3s;
 }
 #brand article:nth-of-type(3) {
-  transition: all 0.8s 1s;
+  transition: all 0.5s 0.5s;
 }
 #brand.on article {
   filter: contrast(120%) brightness(1.1);
@@ -1914,7 +2008,31 @@ main .inner aside span {
   color: aliceblue;
   margin-bottom: 100px;
 }
-#review .inner figure {
+#review .inner dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+#review .inner dl dt a {
+  font: 30px/1 "Poppins";
+  color: #fff;
+  position: absolute;
+  top: 100px;
+  right: 0;
+}
+#review .inner dl dt.on a {
+  color: #ffc852;
+}
+#review .inner dl dt.instagram a {
+  right: 15%;
+}
+#review .inner dl dd.instagram {
+  width: 100%;
+  display: none;
+}
+#review .inner dl dd.instagram.on {
+  display: block;
+}
+#review .inner dl dd.instagram figure {
   display: inline-block;
   position: relative;
   width: 280px;
@@ -1923,25 +2041,46 @@ main .inner aside span {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-#review .inner figure:hover img {
+#review .inner dl dd.instagram figure:hover img {
   filter: grayscale(0) blur(0px);
 }
-#review .inner figure:nth-of-type(4n) {
+#review .inner dl dd.instagram figure:nth-of-type(4n) {
   margin-right: 0;
 }
-#review .inner figure img {
+#review .inner dl dd.instagram figure img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   filter: grayscale(0.7) blur(1px);
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
-#review .inner figure a {
+#review .inner dl dd.instagram figure a {
   width: 100%;
   height: 100%;
   display: block;
   position: absolute;
   top: 0;
+}
+#review .inner dd.youtube {
+  width: 100%;
+  display: none;
+  color: #fff;
+  font-size: 0;
+}
+#review .inner dd.youtube.on {
+  display: block;
+}
+#review .inner dd.youtube article {
+  display: inline-block;
+  width: 280px;
+  margin-right: 20px;
+}
+#review .inner dd.youtube article:nth-of-type(4) {
+  margin-right: 0;
+}
+#review .inner dd.youtube article img {
+  width: 100%;
+  height: 250px;
 }
 
 #footer {
