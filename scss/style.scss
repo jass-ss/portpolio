@@ -5,7 +5,7 @@
 @import "community.scss";
 @import "join.scss";
 @import "store.scss";
-@import url('https://fonts.googleapis.com/css2?family=Lora&family=Nanum+Gothic+Coding&family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Nanum+Gothic+Coding&family=Poppins:wght@300&display=swap");
 
 #header {
   width: 100%;
@@ -25,7 +25,7 @@
         color: #000;
       }
     }
-    .mainMenu{
+    .mainMenu {
       position: absolute;
       bottom: 15px;
       right: 50px;
@@ -55,7 +55,6 @@
         }
       }
     }
-
 
     //햄버거 버튼
     .btnCall {
@@ -174,13 +173,17 @@
   height: calc(100vh - 152px);
   box-shadow: 2px 1px 10px #222;
 
-  .slide{
-    margin-left: 40%; height: 100%;
-    width: 60%; overflow: hidden;
-    font-size: 0; position: relative;
-    .pics{
+  .slide {
+    margin-left: 40%;
+    height: 100%;
+    width: 60%;
+    overflow: hidden;
+    font-size: 0;
+    position: relative;
+    .pics {
       position: absolute;
-      top:0; left: 0;
+      top: 0;
+      left: 0;
       img {
         display: inline-block;
         height: calc(100vh - 152px);
@@ -194,7 +197,7 @@
     width: 1180px;
     margin: 0 auto;
 
-    .wrap{ 
+    .wrap {
       background-color: rgba(255, 255, 255, 0.418);
       position: absolute;
       top: 40%;
@@ -218,19 +221,23 @@
         font: italic bold 24px/1.5 "Poppins";
         color: #333;
 
-        &:nth-of-type(2){
-          top: -15%; left: 10%;
+        &:nth-of-type(2) {
+          top: -15%;
+          left: 10%;
         }
-        &:nth-of-type(3){
-          top: -15%; left: 15%;
+        &:nth-of-type(3) {
+          top: -15%;
+          left: 15%;
         }
-        &.play{
-          top: -15%; left: 0%;
+        &.play {
+          top: -15%;
+          left: 0%;
         }
-        &.stop{
-          top: -15%; left: 5%;
+        &.stop {
+          top: -15%;
+          left: 5%;
         }
-  
+
         &:nth-of-type(1)::after {
           content: "";
           display: block;
@@ -251,97 +258,118 @@
           }
         }
       }
-      .time{
-        width:0; //width: 20%; 
+      .time {
+        width: 0; //width: 20%;
         height: 3px;
         background-color: darkorange;
         position: absolute;
         top: -5%;
       }
-
     }
-
-
   }
 }
 
 #service {
   width: 100%;
   margin: 300px 0 100px;
+  position: relative;
+
+  h1 {
+    text-align: center;
+    font: bold 50px "Poppins";
+    color: #222;
+    padding-top: 30px;
+  }
+  h2 {
+    text-align: center;
+    font: bold 24px "Poppins";
+    color: #777;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .inner {
     width: 1180px;
     margin: 0 auto;
     position: relative;
 
-    h1 {
-      text-align: center;
-      font: bold 50px "Poppins";
-      color: #222;
-      padding-top: 30px;
-    }
-    h2 {
-      text-align: center;
-      font: bold 24px "Poppins";
-      color: #777;
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
     .box {
-      margin-top:100px; margin-bottom: 100px;
+      margin-top: 100px;
+      margin-bottom: 100px;
       float: left;
       width: 380px;
       margin-right: 20px;
-      &:nth-of-type(1){
-        .odd { 
+      &:nth-of-type(1) {
+        .odd {
           opacity: 0;
           margin-top: 100px;
           transition: all 1s;
-          &.on{opacity: 1; margin-top: 0px;}
+          &.on {
+            opacity: 1;
+            margin-top: 0px;
+          }
         }
-        
-      .even{
-        transition: all 1s 0.1s;
-        opacity: 0;   margin-top: 100px;
 
-        &.on{ opacity: 1;  margin-top: 0px;}
-      }
+        .even {
+          transition: all 1s 0.1s;
+          opacity: 0;
+          margin-top: 100px;
+
+          &.on {
+            opacity: 1;
+            margin-top: 0px;
+          }
+        }
       }
 
       &:nth-of-type(2) {
-        margin-top: 200px; 
-        .odd { 
-          opacity: 0; margin-top: 100px;
-          transition: all 1s 0.2s; 
-          &.on{opacity: 1; margin-top: 0px;}
+        margin-top: 200px;
+        .odd {
+          opacity: 0;
+          margin-top: 100px;
+          transition: all 1s 0.2s;
+          &.on {
+            opacity: 1;
+            margin-top: 0px;
+          }
         }
-        
-      .even{
-        transition: all 1s 0.3s;
-        opacity: 0; margin-top: 100px;
 
-        &.on{ opacity: 1; margin-top:0px;}
-      }
+        .even {
+          transition: all 1s 0.3s;
+          opacity: 0;
+          margin-top: 100px;
+
+          &.on {
+            opacity: 1;
+            margin-top: 0px;
+          }
+        }
       }
 
       &:nth-of-type(3) {
-        margin-right: 0; 
-        .odd { 
+        margin-right: 0;
+        .odd {
           opacity: 0;
           margin-top: 100px;
-          transition: all 1s 0.4s; 
-          &.on{opacity: 1; margin-top: 0px;}
+          transition: all 1s 0.4s;
+          &.on {
+            opacity: 1;
+            margin-top: 0px;
+          }
         }
-        .even{
+        .even {
           transition: all 1s 0.5s;
-          opacity: 0;   margin-top: 100px;
-  
-          &.on{ opacity: 1;   margin-top: 0px;}
+          opacity: 0;
+          margin-top: 100px;
+
+          &.on {
+            opacity: 1;
+            margin-top: 0px;
+          }
         }
       }
-
 
       img {
         width: 100%;
@@ -441,16 +469,24 @@
   margin: 200px 0 300px;
   text-align: center;
 
-  & article{
+  & article {
     filter: contrast(70%);
-    &:nth-of-type(1){ transition: all 1s;}
-    &:nth-of-type(2){ transition: all 1s 0.3s;}
-    &:nth-of-type(3){ transition: all 1s 0.5s;}
+    &:nth-of-type(1) {
+      transition: all 1s;
+    }
+    &:nth-of-type(2) {
+      transition: all 1s 0.3s;
+    }
+    &:nth-of-type(3) {
+      transition: all 1s 0.5s;
+    }
   }
 
-  &.on article{
+  &.on article {
     filter: contrast(120%) brightness(1.1);
-    &:nth-of-type(3){ filter: contrast(100%) brightness(1.4);}
+    &:nth-of-type(3) {
+      filter: contrast(100%) brightness(1.4);
+    }
   }
 
   .inner {
@@ -500,8 +536,10 @@
     }
     a {
       position: absolute;
-      bottom: -20%; left: 50%; transform: translateX(-50%);
-      display:block; //a태그 위형제 요소들이 float이라서 display:block하면 제일 위로 간다.
+      bottom: -20%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block; //a태그 위형제 요소들이 float이라서 display:block하면 제일 위로 간다.
       margin-top: 100px;
       font: italic bold 24px/1.5 "Poppins";
       color: #333;
@@ -651,28 +689,33 @@
       color: aliceblue;
       margin-bottom: 100px;
     }
-    dl{
+    dl {
       display: flex;
       flex-wrap: wrap;
       dt {
-          a{ 
-          font: 30px/1 'Poppins';
+        a {
+          font: 30px/1 "Poppins";
           color: #fff;
           position: absolute;
-          top:100px; right: 0;
+          top: 100px;
+          right: 0;
+        }
+        &.on {
+          a {
+            color: rgb(255, 200, 82);
           }
-        &.on{
-         a {color: rgb(255, 200, 82);}
         }
 
-        &.instagram a{
-        right: 15%;
-        }    
+        &.instagram a {
+          right: 15%;
+        }
       }
-      dd.instagram{
+      dd.instagram {
         width: 100%;
         display: none;
-        &.on{ display: block;}
+        &.on {
+          display: block;
+        }
         figure {
           display: inline-block;
           position: relative;
@@ -681,15 +724,15 @@
           margin-right: 20px;
           margin-top: 10px;
           margin-bottom: 10px;
-    
+
           &:hover img {
             filter: grayscale(0) blur(0px);
           }
-    
+
           &:nth-of-type(4n) {
             margin-right: 0;
           }
-    
+
           img {
             width: 100%;
             height: 100%;
@@ -697,7 +740,7 @@
             filter: grayscale(0.7) blur(1px);
             transition: all 0.2s;
           }
-    
+
           a {
             width: 100%;
             height: 100%;
@@ -707,52 +750,64 @@
           }
         }
       }
-      dd.youtube{
+      dd.youtube {
         width: 100%;
         display: none;
         color: #fff;
-        &.on{ display: block;}
+        &.on {
+          display: block;
+        }
         font-size: 0;
-        article{
+        article {
           display: inline-block;
-          width: 280px; margin-right: 20px; height: 500px;
-          &:nth-of-type(4){
+          width: 280px;
+          margin-right: 20px;
+          height: 500px;
+          &:nth-of-type(4) {
             margin-right: 0;
           }
-          img{
+          img {
             margin-top: 50px;
-            width: 100%; height: 250px; margin-bottom: 30px;
+            width: 100%;
+            height: 250px;
+            margin-bottom: 30px;
           }
-          .con{
-            width: 100%; height: 50px; padding: 0 10px;
-            font: 14px/1.5 'Lora';
+          .con {
+            width: 100%;
+            height: 50px;
+            padding: 0 10px;
+            font: 14px/1.5 "Lora";
             color: #fff;
           }
         }
       }
     }
   }
-  aside{
+  aside {
     position: fixed;
-    top: 0; 
-    width: 100vw; height: 100vw;
+    top: 0;
+    width: 100vw;
+    height: 100vw;
     background-color: rgba(31, 31, 31, 0.849);
 
-    iframe{
+    iframe {
       position: absolute;
-      top:4%; left: 50%; transform: translateX(-50%);
+      top: 4%;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
-    .closeBtn{
+    .closeBtn {
       position: absolute;
-      font: bold 60px/1 'Poppins';
+      font: bold 60px/1 "Poppins";
       color: #fff;
-      top:5%; right: 20%;
-      padding: 10px; border: 3px solid #fff;
+      top: 5%;
+      right: 20%;
+      padding: 10px;
+      border: 3px solid #fff;
       cursor: pointer;
     }
   }
-  
 }
 
 #footer {
@@ -788,4 +843,866 @@
       color: #222;
     }
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1179px) {
+  #header {
+    .inner {
+      width: 100%;
+      > h1 {
+        position: absolute;
+        bottom: 15px;
+        left: 5px;
+
+        > a {
+          font: bold 24px/1 "Poppins";
+          color: #000;
+        }
+      }
+      .mainMenu {
+        position: absolute;
+        bottom: 15px;
+        right: 50px;
+        display: none;
+
+        li {
+          float: left;
+          margin-left: 20px;
+
+          a {
+            font: bold 20px/1 "Poppins";
+            color: #555;
+          }
+        }
+      }
+      .util {
+        position: absolute;
+        display: none;
+        top: 50px;
+        right: 50px;
+
+        li {
+          float: left;
+          margin-left: 20px;
+
+          a {
+            font: 20px/1 "Poppins";
+            color: #333;
+          }
+        }
+      }
+
+      //햄버거 버튼
+      .btnCall {
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 50px;
+        top: 48%;
+
+        &::before {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 5px;
+          background: #000;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transition: top 0.5s 0s, transform 0.5s 0.5s;
+        }
+        &::after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 5px;
+          background: #000;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          transition: bottom 0.5s 0s, transform 0.5s 0.5s;
+        }
+        span {
+          display: block;
+          width: 100%;
+          height: 5px;
+          background: #000;
+          position: absolute;
+          top: 50%;
+          margin-top: -1px;
+          left: 0;
+          transition: all 0.5s;
+          text-indent: -9999px;
+        }
+
+        &.on {
+          &::before {
+            top: 50%;
+            margin-top: -1px;
+            transform: rotate(45deg);
+          }
+          &::after {
+            bottom: 50%;
+            margin-bottom: -1px;
+            transform: rotate(-45deg);
+          }
+          span {
+            transform: translateX(100%);
+            opacity: 0;
+          }
+        }
+      }
+
+      .menuMo {
+        width: 270px;
+        height: 100vh;
+        background: #333;
+        position: fixed;
+        top: 0;
+        left: -270px;
+        padding: 35px 30px;
+        z-index: 10;
+        transition: 0.5s;
+
+        &.on {
+          left: 0;
+        }
+
+        h1 {
+          margin-top: 100%;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #666;
+
+          a {
+            display: block;
+            font: bold 24px/1 "Poppins";
+            color: #fff;
+            text-align: center;
+          }
+          span {
+            display: block;
+            text-align: center;
+            font-size: 12px;
+            color: #aaa;
+          }
+        }
+        #gnbMo {
+          li {
+            a {
+              display: block;
+              width: 100%;
+              padding: 20px 0;
+              border-bottom: 1px solid #444;
+              font: bold 14px/1 "Poppins";
+              color: #888;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #visual {
+    width: 100%;
+    // height: calc(100vh - 152px);
+    box-shadow: none;
+
+    .slide {
+      margin-left: 0%; //height: 100%;
+      width: 100%; //overflow: hidden;
+      //font-size: 0; position: relative;
+      .pics {
+        //  position: absolute;
+        //  top:0; left: 0;
+        img {
+          // display: inline-block;
+          height: 130vmin;
+          //  object-fit: cover;
+          //opacity: 0.8;
+          //  position: relative;
+        }
+      }
+    }
+    .inner {
+      width: 100%;
+      //  margin: 0 auto;
+
+      .wrap {
+        //  background-color: rgba(255, 255, 255, 0.418);
+        //  position: absolute;
+        top: 35%;
+        width: 100%;
+        height: 45vmin;
+        h1 {
+          //  position: absolute;
+          font: bold 6vmin/1 "Poppins";
+          top: 10vmin;
+          left: 8%;
+          //  color: #222;
+        }
+        p {
+          //  position: absolute;
+          top: 20vmin;
+          left: 8%;
+          font: normal 3vmin/1.5 "Lora";
+          //  color: #222;
+        }
+        a {
+          //  position: absolute;
+          top: 35vmin;
+          left: 8%;
+          font: italic bold 2vmin/1.5 "Poppins";
+          // color: #333;
+
+          &:nth-of-type(2) {
+            top: 5%;
+            left: 18%;
+          }
+          &:nth-of-type(3) {
+            top: 5%;
+            left: 23%;
+          }
+          &.play {
+            top: 5%;
+            left: 8%;
+          }
+          &.stop {
+            top: 5%;
+            left: 13%;
+          }
+
+          /* &:nth-of-type(1)::after {
+         // content: "";
+         // display: block;
+          transform: translate(150px, -33px);
+          width: 30px;
+          height: 30px;
+          transition: all 1.5s;
+        }
+        &:nth-of-type(1):hover {
+          transition: all 2s;
+          &::after {
+            display: block;
+            content: "";
+            transform: translate(150px, -33px) rotate(360deg);
+            width: 30px;
+            height: 30px;
+            background-color: steelblue;
+          }
+        }*/
+        }
+        .time {
+          //  width:0; //width: 20%;
+          height: 5px;
+          //  background-color: darkorange;
+          //  position: absolute;
+          top: 15%;
+          left: 8%;
+        }
+      }
+    }
+  }
+
+  #service {
+    margin: 20vmin 0 100px;
+  h1 {
+    text-align: center;
+    font: bold 8vmin "Poppins";
+    color: #222;
+    padding-top: 30px;
+  }
+  h2 {
+    text-align: center;
+    font: bold 24px "Poppins";
+    color: #777;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  } 
+
+    .inner {
+      width: 100%;
+      height: 300vmin;
+      //    margin: 0 auto;
+      position: relative;
+
+      .box {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        width: 100%;
+        &:nth-of-type(1) {
+          .odd {
+            width: 49%;
+            margin: 2%;
+            position: absolute;
+            top: 10vmin;
+            opacity: 0;
+            margin-top: 100px;
+            transition: all 0.7s;
+            &.on {
+              opacity: 1;
+              margin-top: 0px;
+            }
+          }
+
+          .even {
+            width: 49%;
+            margin: 0;
+            position: absolute;
+            top: 100vmin;
+            right: 0;
+            transition: all 0.7s 0s;
+            opacity: 0;
+            margin-top: 100px;
+            &.on {
+              opacity: 1;
+              margin-top: 0px;
+            }
+          }
+        }
+
+        &:nth-of-type(2) {
+          margin-top: 200px;
+          width: 100%;
+          .odd {
+            width: 49%;
+            margin: 0%;
+            position: absolute;
+            top: 10vmin;
+            right: 0;
+            opacity: 0;
+            margin-top: 100px;
+            transition: all 0.7s 0.2s;
+            &.on {
+              opacity: 1;
+              margin-top: 0px;
+            }
+          }
+
+          .even {
+            width: 49%;
+            margin: 2%;
+            position: absolute;
+            top: 190vmin;
+            transition: all 0.7s 0.3s;
+            opacity: 0;
+            margin-top: 100px;
+
+            &.on {
+              opacity: 1;
+              margin-top: 0px;
+            }
+          }
+        }
+
+        &:nth-of-type(3) {
+          margin-right: 0;
+          width: 100%;
+          .odd {
+            width: 49%;
+            margin: 2%;
+            position: absolute;
+            top: 100vmin;
+            opacity: 0;
+            margin-top: 100px;
+            transition: all 0.7s 0.4s;
+            &.on {
+              opacity: 1;
+              margin-top: 0px;
+            }
+          }
+          .even {
+            width: 49%;
+            margin: 0%;
+            position: absolute;
+            top: 190vmin;
+            right: 0;
+            transition: all 0.7s 0.5s;
+            opacity: 0;
+            margin-top: 100px;
+
+            &.on {
+              opacity: 1;
+              margin-top: 0px;
+            }
+          }
+        }
+
+        img {
+          width: 100%;
+          height: 40vmin;
+          object-fit: cover;
+          padding: 0 10px;
+        }
+        h3 {
+          padding: 4vmin 10px;
+          font: bold 4vmin/1.2 "Poppins";
+          color: #222;
+        }
+        p {
+          padding: 0 10px;
+          min-height: 120px;
+          margin-bottom: 50px;
+          font: normal 3vmin/1.5 "Poppins";
+          color: #666;
+        }
+      }
+      a {
+        display: block;
+        position: absolute;
+        bottom: 5vmin;
+        left: 50%;
+        transform: translateX(-50%);
+        font: italic bold 3vmin/1.5 "Poppins";
+        color: #333;
+        transition: 0.2s;
+
+        &:hover {
+          color: #fff;
+          background: #b3b1b1ba;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+
+  #banner {
+    width: 100%;
+    .aniLogo {
+      display: none;
+      height: 200px;
+      border: none;
+    }
+    .inner {
+      width: 100%;
+      height: 50vmin;
+      margin: 0 auto;
+      position: relative;
+
+      article {
+        position: relative;
+        width: 100%;
+        height: 50vmin;
+        img {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0px;
+        }
+        h1 {
+          position: absolute;
+          top: 35%;
+          width: 100%;
+          padding-left: 50px;
+          margin-left: 0;
+          transform: translateY(-50%);
+          font: bold 7vmin "Poppins";
+        }
+        p {
+          position: absolute;
+          top: 55%;
+          width: 100%;
+          transform: translateY(-50%);
+          padding: 0 50px;
+          margin-left: 0;
+          font: bold 3vmin/1.5 "Poppins";
+        }
+        a {
+          top: 70%;
+          font: normal 3vmin/1.5 "Poppins";
+        }
+      }
+    }
+  }
+
+  #brand {
+    width: 100%;
+    margin: 200px 0 200px;
+    text-align: center;
+
+    & article {
+      filter: contrast(70%);
+      &:nth-of-type(1) {
+        transition: all 1s;
+      }
+      &:nth-of-type(2) {
+        transition: all 1s 0.3s;
+      }
+      &:nth-of-type(3) {
+        transition: all 1s 0.5s;
+      }
+    }
+
+    &.on article {
+      filter: contrast(120%) brightness(1.1);
+      &:nth-of-type(3) {
+        filter: contrast(100%) brightness(1.4);
+      }
+    }
+
+    .inner {
+      width: 100%;
+      position: relative;
+      margin: 0 auto;
+      h1 {
+        font: bold 8vmin "Poppins";
+      }
+      article {
+        padding-top: 50px;
+        float: none;
+        width: 80%;
+        margin-right: 0px;
+        margin-left: 10%;
+
+        img {
+          height: 40vmin;
+        }
+
+        h3 {
+          font: bold 5vmin "Poppins";
+          min-height: 30px;
+          margin: 4vmin 0;
+        }
+        p {
+          display: block;
+          font: normal 3vmin/1.5 "Poppins";
+          color: #444;
+        }
+      }
+      a {
+        position: absolute;
+        bottom: -15vmin;
+        display: block; //a태그 위형제 요소들이 float이라서 display:block하면 제일 위로 간다.
+        margin-top: 0px;
+        font: italic bold 3vmin/1.5 "Poppins";
+      }
+    }
+  }
+
+  #banner2 {
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    .inner {
+      width: 100%;
+      height: 70vmin;
+      margin: 0 auto;
+
+      img {
+        width: 100%;
+        height: 70vmin;
+        position: absolute;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+        z-index: -1;
+      }
+      h1 {
+        position: absolute;
+        top: 35%;
+        width: 100%;
+        margin-left: 0px;
+        padding: 0 30px;
+        transform: translateY(-50%);
+        font: bold 8vmin "Poppins";
+      }
+      p {
+        position: absolute;
+        top:55%;
+        width: 100%;
+        transform: translateY(-50%);
+        margin-left: 0px;
+        padding: 0 30px;
+        font: bold 3vmin/1.5 "Poppins";
+      }
+      a {
+        top: 70%;
+        display: block;
+        font: normal 3vmin/1.5 "Poppins";
+        margin-left: 30px;
+        i {
+          padding: 0 5px;
+        }
+      }
+    }
+  }
+
+  #product {
+    width: 100%;
+    padding-bottom: 200px;
+    position: relative;
+
+    .inner {
+      width: 100%;
+      position: relative;
+      margin: 0 auto;
+
+      .wrap {
+        width: 100%;
+        h1 {
+          width: 60%;
+          padding-right: 50px;
+          font: bold 6vmin/1.2 "Poppins";
+          padding-top: 50px;
+          margin-bottom: 30px;
+          padding-left: 50px;
+        }
+        h2 {
+          width: 60%;
+          padding-right: 0%;
+          padding-left: 50px;
+          font: bold 24px "Poppins";
+          color: #777;
+          position: absolute;
+          top: 0;
+        }
+
+        p {
+          width: 60%;
+          padding-right: 10%;
+          padding-left: 50px;
+          font: normal 3vmin/1.5 "Poppins";
+          height: 400px;
+        }
+        img {
+          width: 40%;
+          object-fit: cover;
+          height: 400px;
+          padding-right: 50px;
+          position: absolute;
+        }
+        a {
+          position: absolute;
+          bottom: -10vmin;
+          left: 0px;
+          display: inline-block;
+          margin-top: 20px;
+          margin-left: 50px;
+          font: italic bold 24px/1.5 "Poppins";
+          color: #333;
+          transition: 0.2s;
+
+          &:hover {
+            color: #fff;
+            background: #b3b1b1ba;
+            padding: 0 10px;
+            margin-left: 50px;
+          }
+        }
+      }
+    }
+  }
+
+  #review {
+    .inner {
+      width: 100%;
+
+      h1 {
+        font: bold 8vmin/1 "Poppins";
+        color: aliceblue;
+        margin-bottom: 100px;
+        margin-left: 5%;
+      }
+      dl {
+        display: flex;
+        flex-wrap: wrap;
+        dt {
+          a {
+            font: 4vmin/1 "Poppins";
+            color: #fff;
+            position: absolute;
+            top: 100px;
+            right: 8%;
+          }
+          &.on {
+            a {
+              color: rgb(255, 200, 82);
+            }
+          }
+
+          &.instagram a {
+            right: 30%;
+          }
+        }
+        dd.instagram {
+          width: 100%;
+          display: none;
+          &.on {
+            display: block;
+          }
+          figure {
+            display: inline-block;
+            position: relative;
+            width: 49%;
+            height: 250px;
+            margin-right: 2%;
+            margin-top: 10px; 
+            margin-bottom: 0px;
+
+            &:hover img {
+              filter: grayscale(0) blur(0px);
+            }
+
+            &:nth-of-type(2n) {
+              margin-right: 0;
+            }
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              filter: grayscale(0.7) blur(1px);
+              transition: all 0.2s;
+            }
+
+            a {
+              width: 100%;
+              height: 100%;
+              display: block;
+              position: absolute;
+              top: 0;
+            }
+          }
+        }
+        dd.youtube {
+          width: 100%;
+          display: none;
+          color: #fff;
+          &.on {
+            display: block;
+          }
+          font-size: 0;
+          article {
+            display: inline-block;
+            width: 49%;
+            margin-right: 2%;
+            height: 60vmin;
+            &:nth-of-type(2n) {
+              margin-right: 0;
+            }
+            img {
+              margin-top: 50px;
+              width: 100%;
+              height: 250px;
+              margin-bottom: 30px;
+            }
+            .con {
+              width: 100%;
+              height: 50px;
+              padding: 0px;
+              font: 2vmin/1.5 "Poppins";
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    aside {
+      position: fixed;
+      top: 0;
+      width: 100vw;
+      height: 100vw;
+      background-color: rgba(31, 31, 31, 0.849);
+
+      iframe {
+        position: absolute;
+        top: 4%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .closeBtn {
+        position: absolute;
+        font: bold 60px/1 "Poppins";
+        color: #fff;
+        top: 5%;
+        right: 20%;
+        padding: 10px;
+        border: 3px solid #fff;
+        cursor: pointer;
+      }
+    }
+  }
+
+  #footer {
+    width: 100%;
+    padding: 30px;
+    .inner {
+      width: 100%;
+      margin: 0 auto;
+
+      h1 {
+        font: bold 30px "Poppins";
+        color: #222;
+        margin-bottom: 10px;
+      }
+
+      li {
+        display: inline-block;
+        font: bold 16px/1 "Poppins";
+        color: #222;
+        margin-bottom: 10px;
+
+        a {
+          color: #222;
+        }
+      }
+      address {
+        font: normal 16px/1.5 "Poppins";
+        color: #222;
+        margin-bottom: 10px;
+      }
+      p {
+        font: normal 16px/1.5 "Poppins";
+        color: #222;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
 }
