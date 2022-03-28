@@ -1800,16 +1800,16 @@ main .inner aside span {
   text-align: center;
 }
 #brand article {
-  filter: contrast(50%);
+  filter: contrast(70%);
 }
 #brand article:nth-of-type(1) {
-  transition: all 0.3s;
+  transition: all 1s;
 }
 #brand article:nth-of-type(2) {
-  transition: all 0.5s 0.3s;
+  transition: all 1s 0.3s;
 }
 #brand article:nth-of-type(3) {
-  transition: all 0.5s 0.5s;
+  transition: all 1s 0.5s;
 }
 #brand.on article {
   filter: contrast(120%) brightness(1.1);
@@ -2061,26 +2061,59 @@ main .inner aside span {
   position: absolute;
   top: 0;
 }
-#review .inner dd.youtube {
+#review .inner dl dd.youtube {
   width: 100%;
   display: none;
   color: #fff;
   font-size: 0;
 }
-#review .inner dd.youtube.on {
+#review .inner dl dd.youtube.on {
   display: block;
 }
-#review .inner dd.youtube article {
+#review .inner dl dd.youtube article {
   display: inline-block;
   width: 280px;
   margin-right: 20px;
+  height: 500px;
 }
-#review .inner dd.youtube article:nth-of-type(4) {
+#review .inner dl dd.youtube article:nth-of-type(4) {
   margin-right: 0;
 }
-#review .inner dd.youtube article img {
+#review .inner dl dd.youtube article img {
+  margin-top: 50px;
   width: 100%;
   height: 250px;
+  margin-bottom: 30px;
+}
+#review .inner dl dd.youtube article .con {
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  font: 14px/1.5 "Lora";
+  color: #fff;
+}
+#review aside {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vw;
+  background-color: rgba(31, 31, 31, 0.849);
+}
+#review aside iframe {
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#review aside .closeBtn {
+  position: absolute;
+  font: bold 60px/1 "Poppins";
+  color: #fff;
+  top: 5%;
+  right: 20%;
+  padding: 10px;
+  border: 3px solid #fff;
+  cursor: pointer;
 }
 
 #footer {
