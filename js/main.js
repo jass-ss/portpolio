@@ -72,7 +72,7 @@ review.addEventListener("click", (e) => {
     //console.log(videoId)
     const aside = document.createElement("aside");
     aside.innerHTML = `
-    <iframe src="http://youtube.com/embed/${videoId}" frameborder="0" width="50%" height="40%" allowfullscreen></iframe>
+    <iframe src="https://youtube.com/embed/${videoId}" frameborder="0" width="50%" height="40%" allowfullscreen></iframe>
     <span class='closeBtn'>X</span>`;
     review.append(aside);
   }
