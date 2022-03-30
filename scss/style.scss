@@ -289,9 +289,12 @@
           position: relative;
           text-align: center;
         }
+        p{
+          padding: 0px 30px;
+        } 
         label[for=ck]{
           position: absolute;
-          top: 30%;
+          top: 85%;
           padding: 10px;
         }
         input[type=checkbox]{
@@ -299,7 +302,7 @@
         }
         .close{
           position: absolute;
-          top: 32%; right: 20px;
+          top: 87%; right: 20px;
         }
 
       }

@@ -1797,9 +1797,12 @@ aside .close {
   position: relative;
   text-align: center;
 }
+#visual .inner .wrap .popup p {
+  padding: 0px 30px;
+}
 #visual .inner .wrap .popup label[for=ck] {
   position: absolute;
-  top: 30%;
+  top: 85%;
   padding: 10px;
 }
 #visual .inner .wrap .popup input[type=checkbox] {
@@ -1807,7 +1810,7 @@ aside .close {
 }
 #visual .inner .wrap .popup .close {
   position: absolute;
-  top: 32%;
+  top: 87%;
   right: 20px;
 }
 
