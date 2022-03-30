@@ -9,7 +9,8 @@
     <script
       src="https://kit.fontawesome.com/e6e501712d.js"
       crossorigin="anonymous"></script>
-    <script src="js/anime.js"></script>  
+    <script src="js/anime.js"></script>
+    <script defer src="js/popup.js"></script>  
     <script defer src="js/main.js"></script>
     <!--defer : html문서를 다 읽은 후에 js스크립트를 읽어라-->
   </head>
@@ -58,11 +59,11 @@
     <figure id="visual">
       <div class="slide">
         <div class="pics">
-          <img src="./img/visual1.jpg" ></img>
-          <img src="./img/visual3.jpg" ></img>
-          <img src="./img/visual2.jpg" ></img>
-          <img src="./img/visual6.jpg" ></img>
-          <img src="./img/visual7.jpg" ></img>
+          <img src="./img/visual1.jpg"></img>
+          <img src="./img/visual3.jpg"></img>
+          <img src="./img/visual2.jpg"></img>
+          <img src="./img/visual6.jpg"></img>
+          <img src="./img/visual7.jpg"></img>
         </div>
       </div>
       <div class="inner">
@@ -78,6 +79,13 @@
           <a href="#" class="play"><i class="fa-solid fa-caret-right"></i></a>
           <a href="#" class="stop"><i class="fa-solid fa-pause"></i></a>    
           <div class="time"></div>
+          <span class="del">쿠키삭제</span>
+          <div class="popup">
+            <h1>EVENT</h1>
+            <label for="ck">
+              <input type="checkbox" id="ck">하루동안 보지않기</label>
+              <span class="close">X</span>
+          </div>
         </div>
 
       </div>

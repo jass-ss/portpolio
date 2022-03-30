@@ -1772,6 +1772,44 @@ aside .close {
   position: absolute;
   top: -5%;
 }
+#visual .inner .wrap .del {
+  position: absolute;
+  color: #fff;
+  font-size: 30px;
+  top: -10%;
+  right: -500px;
+}
+#visual .inner .wrap .popup {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -500px;
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  border: 3px solid #222;
+  transition: all 0.5s 0.5s;
+}
+#visual .inner .wrap .popup.on {
+  opacity: 1;
+}
+#visual .inner .wrap .popup h1 {
+  position: relative;
+  text-align: center;
+}
+#visual .inner .wrap .popup label[for=ck] {
+  position: absolute;
+  top: 30%;
+  padding: 10px;
+}
+#visual .inner .wrap .popup input[type=checkbox] {
+  margin: 10px;
+}
+#visual .inner .wrap .popup .close {
+  position: absolute;
+  top: 32%;
+  right: 20px;
+}
 
 #service {
   width: 100%;
