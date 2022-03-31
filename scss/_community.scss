@@ -2,27 +2,26 @@
   .community {
     width: 100%;
   
-    .community_visual {
-      background: url(../img/qna.jpg) no-repeat center/cover;
-      height: 450px;
-      object-fit: cover;    
-      box-shadow: 2px 1px 10px #222;
-    }
-  
     .inner {
       padding-top: 100px;
       width: 1180px;
       margin: 0 auto;
       position: relative;
-  
+      
+      .wrap{
+        display: flex;
+        justify-content: center;
       h1 {
         font: bold 65px/1 "Poppins";
         color: #222;
+        padding: 50px;
+        text-align: center;
       }
       p {
         font: normal 24px/1.5 "Lora";
         margin: 50px 0 30px;
         color: #222;
+      }
       }
   
       .category {
@@ -52,15 +51,18 @@
         .searchBox {
           width: 100%;
           margin: 0 auto;
+          display: inline;
           button {
             font-size: 20px;
             margin: 20px 0 0px 0px;
             color: #555;
+            cursor: pointer;
           }
           #search {
             border: none;
-            width: 30%;
+            width: 15%;
             border-bottom: 1px solid black;
+            margin-left: 20px;
           }
         }
       }

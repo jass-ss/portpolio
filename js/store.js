@@ -5,10 +5,8 @@ window.addEventListener("load", () => {
     transitionDuration: "0.8s",
   });
 
-  const category = document.querySelectorAll(".list li"); //이거 모든 li가 선택됨.,. 내가 원하는 건 3묶음으로 선택하는건데!? 동작은 문제없지만, 원하는 그림이 아님... 나중에 수정해야함.
+  const category = document.querySelectorAll(".list li"); 
   console.log(category);
-  //const appliance = document.querySelectorAll("#appliance li");
-  //const cookWear = document.querySelectorAll("#cookWear li");
 
   for (el of category) {
     el.addEventListener("click", (e) => {

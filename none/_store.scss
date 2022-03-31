@@ -1,0 +1,253 @@
+@charset 'UTF-8';
+
+.store img {
+  object-fit: cover;
+}
+  .store_visual {
+    width: 100%;
+    height: 450px;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      filter: drop-shadow(2px 2px 5px black);
+      object-fit: cover;
+    }
+
+    h1 {
+      position: absolute;
+      top: 35%;
+      right: 25%;
+      font: bold 70px/1 "Poppins";
+      color: #222;
+    }
+    p {
+      position: absolute;
+      top: 55%;
+      right: 25%;
+      font: normal 32px/1.5 "Lora";
+      color: #222;
+    }
+  }
+
+  main .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+
+    .wrap {
+      border-bottom: 2px solid black;
+      display: flex;
+      height: 300px;
+
+      h1 {
+        flex: 1;
+        font: bold 30px/1 "arial";
+        margin: 100px 100px 50px 0;
+      }
+
+      .list {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font: 20px/1 "arial";
+        color: #222;
+
+        .category{ 
+          min-width: 25%;
+          &.on a {
+            color: burlywood;
+          }
+        }
+        a {
+          color: #222;
+        }
+
+        .cate_appliance,
+        .cate_cookWear {
+          display: flex;
+          ul {
+            font-size: 24px;
+          }
+          #appliance {
+            display: inline-block;
+            a {
+              color: #222;
+            }
+            li {
+              display: inline-block;
+              font: 20px/1 "arial";
+              padding-left: 50px;
+              &.on a {
+                color: burlywood;
+              }
+            }
+          }
+
+          #cookWear {
+            display: inline-block;
+            a {
+              color: #222;
+            }
+            li {
+              display: inline-block;
+              font: 20px/1 "arial";
+              padding-left: 60px;
+              &.on a {
+                color: burlywood;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .store_product {
+      width: 1180px;
+      height: 100%;
+      margin-top: 100px;
+      margin-left: 10px;
+      position: relative; 
+      display: flex;
+      flex-wrap: wrap;
+      article {
+        width: 275px;
+        height: 300px;
+        margin-right: 20px;
+        margin-bottom: 50px;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 1px 1px 10px #22222230;
+
+        &:hover{
+          filter: contrast(0.9);
+        }
+
+        .txt {
+          text-align: center;
+          font: 22px/1.5 "Lora";
+          color: #444;
+          & li:nth-of-type(1) {
+            height: 40px;
+            margin-bottom: 10px;
+          }
+        }
+
+        img {
+          width: 100%;
+          padding: 10px;
+          height: 240px;
+        }
+      }
+    }
+
+    aside.store {
+      width:auto; height: 80vh;
+      background: rgb(248, 245, 240);
+      position: fixed;
+      bottom: -100%; top:auto;
+      padding:0;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: all 1s;
+      color: #222;
+
+      .wrapper{    
+        width: 100vw; height: 100vh;
+        position: absolute;
+        top: -13%; left: -30%;
+        z-index: -1;
+        display: none;
+        }
+  
+
+      .aside_inner {
+        width: 1180px!important; height: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: center;
+        .pic{
+          width: 30%; height: 45%;
+          margin-left: 20%;
+          margin-top: 150px;  
+          box-shadow: 1px 1px 10px #222;
+          .top{
+          position: absolute;
+          height: 5px; width: 0;
+          top:150px; left: 20%;
+          background: rgba(0, 0, 0, 0.644);
+        }
+        .left{
+          position: absolute;
+          bottom:calc(80vh - (45% + 150px)); left:20%;
+          height: 0px; width: 5px;
+          background: rgba(0, 0, 0, 0.644);
+        }
+        .right{
+          position: absolute;
+          top:150px; left:50%;
+          height: 0px; width: 5px;
+          background: rgba(0, 0, 0, 0.644);
+        }
+        .bottom{
+          position: absolute;
+          top: calc(150px + 45%); right:50%;
+          height: 5px; width: 0;
+          background: rgba(0, 0, 0, 0.644);
+        }
+
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+        }  
+        
+        .txt {
+          display: block;
+          width: 50%;
+          height: 30%;
+          margin-top: 150px; 
+          padding: 0 50px;
+          li {
+            color: #222;
+            font: normal 30px/1.5 "Lora";
+            margin-bottom: 20px;
+          }
+          & li:nth-of-type(1) {
+            font: bold 40px/1.5 "Lora";
+            margin-bottom: 20px;
+          }
+        }
+        a {
+          position: absolute;
+          top: 55%;   
+          left: calc(50% + 100px);
+          font: bold 28px/1 "poppins";
+          color: #222;
+          padding: 20px;
+          border-bottom: 3px solid #222;
+          opacity: 0;
+        }
+      }
+      span {
+        display: block;
+        position: absolute;
+        right: 50%;
+        bottom: 5%;
+        transform: translateX(50%);
+        font: bold 30px/1 "Poppins";
+        border: 2px solid #222;
+        color: #222;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        opacity: 0;
+      }
+    }
+  }
