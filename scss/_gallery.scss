@@ -31,7 +31,6 @@
     section.gallery{
         width:1180px; margin: 0 auto; height: 100%;
         position:relative; 
-        transform:translateY(100px); transition:1s;
         
         dt{
             cursor: pointer;
@@ -44,6 +43,7 @@
         }
         
         dd.sns{
+            margin-top: 150px; margin-bottom: 100px;
             display: none;
             &.on{
                 display: block; transform:translateY(0px); 
@@ -89,7 +89,7 @@
 
         dd.youtube{
             display: none;
-
+            margin-top: 150px; margin-bottom: 100px;
             &.on{
                 display: block;
 

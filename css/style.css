@@ -1020,13 +1020,14 @@ main .five .inner #mail div #submit {
   position: relative;
   display: flex;
   text-align: left;
-  margin: 100px 0;
+  padding-top: 100px;
+  margin-bottom: 100px;
   background: #f8f5f0;
 }
 .join .inner .wrap form .wrapper2 h2 {
   position: absolute;
   left: 70%;
-  top: 50px;
+  top: 150px;
   transform: translateX(-50%);
 }
 .join .inner .wrap form .wrapper2 table {
@@ -1157,7 +1158,7 @@ main .five .inner #mail div #submit {
 #header_sub2 > h1 {
   position: absolute;
   top: 50px;
-  left: 50px;
+  left: 100px;
   line-height: 0px;
 }
 #header_sub2 > h1 > a {
@@ -1191,7 +1192,7 @@ main .five .inner #mail div #submit {
 #header_sub2 .util_sub {
   position: absolute;
   top: 50px;
-  right: 5%;
+  right: 100px;
   line-height: 0px;
 }
 #header_sub2 .util_sub li {
@@ -1221,13 +1222,14 @@ main .five .inner #mail div #submit {
   color: #333;
   position: absolute;
   bottom: 30px;
+  left: 100px;
 }
 #header_sub2 .inner p {
-  font: bold 24px/1.3 "Lora";
+  font: bold 22px/1.5 "Lora";
   color: #333;
   position: absolute;
   bottom: 30px;
-  right: 50px;
+  right: 100px;
   width: 25%;
 }
 #header_sub2 .inner .btnCall {
@@ -1582,8 +1584,6 @@ section.gallery {
   margin: 0 auto;
   height: 100%;
   position: relative;
-  transform: translateY(100px);
-  transition: 1s;
 }
 section.gallery dt {
   cursor: pointer;
@@ -1595,6 +1595,8 @@ section.gallery dt.sns {
   right: 15%;
 }
 section.gallery dd.sns {
+  margin-top: 150px;
+  margin-bottom: 100px;
   display: none;
 }
 section.gallery dd.sns.on {
@@ -1651,6 +1653,8 @@ section.gallery dd.sns .item > div .profile span {
 }
 section.gallery dd.youtube {
   display: none;
+  margin-top: 150px;
+  margin-bottom: 100px;
 }
 section.gallery dd.youtube.on {
   display: block;
@@ -1700,6 +1704,327 @@ aside .close {
   cursor: pointer;
 }
 
+.brand .inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 300px;
+}
+.brand .inner h1 {
+  text-align: center;
+  font: bold 55px/1 "Poppins";
+  margin-bottom: 100px;
+}
+.brand .inner .svg {
+  display: block;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+}
+.brand .inner .svg svg path {
+  fill: transparent;
+  stroke: #444;
+  stroke-width: 3;
+  stroke-dasharray: 1871;
+  stroke-dashoffset: 1871;
+  transition: stroke-dashoffset 1s, fill 1s 1s;
+}
+.brand .inner .svg svg path.on {
+  stroke-dashoffset: 0;
+  fill: #444;
+}
+.brand .inner p.intro {
+  display: block;
+  text-align: center;
+  font: italic 24px/1.5 "Poppins";
+  color: #222;
+  width: 50%;
+  margin: 50px auto;
+}
+.brand .inner article.team {
+  width: 100%;
+  display: flex;
+  margin: 300px 0 400px 0;
+  position: relative;
+}
+.brand .inner article.team::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  transform: translateY(-50%);
+  content: "";
+  width: 100vw;
+  height: 700px;
+  background-color: #efefef;
+  z-index: -1;
+}
+.brand .inner article.team .txt {
+  width: 50%;
+  height: 400px;
+}
+.brand .inner article.team .txt h1 {
+  text-align: center;
+  padding-top: 10%;
+  margin-bottom: auto;
+}
+.brand .inner article.team .txt p {
+  padding: 50px 100px;
+  font: 24px/1.5 "Poppins";
+}
+.brand .inner article.team .pics {
+  width: 50%;
+  height: 400px;
+  font-size: 0;
+  padding: 10px;
+}
+.brand .inner article.team .pics .pic {
+  display: inline-block;
+  width: calc(50% - 10px);
+  height: calc(50% - 10px);
+  box-sizing: border-box;
+  position: relative;
+  margin: 5px;
+}
+.brand .inner article.team .pics .pic:hover {
+  background-color: #444;
+}
+.brand .inner article.team .pics .pic:hover p {
+  opacity: 1;
+  color: white;
+}
+.brand .inner article.team .pics .pic:hover img {
+  opacity: 0.5;
+}
+.brand .inner article.team .pics .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.brand .inner article.team .pics .pic > p {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  font: bold 30px/1 "Lora";
+  text-align: center;
+  opacity: 0;
+}
+.brand .inner article.contact {
+  width: 100%;
+  display: flex;
+  margin: 200px 0;
+}
+.brand .inner article.contact .map_con {
+  width: 55%;
+  height: 400px;
+  text-align: center;
+}
+.brand .inner article.contact .map_con .map {
+  width: 100%;
+  height: 80%;
+  margin-bottom: 20px;
+}
+.brand .inner article.contact .map_con .traffic {
+  display: inline;
+}
+.brand .inner article.contact .map_con .traffic li {
+  display: inline;
+}
+.brand .inner article.contact .map_con .traffic a {
+  color: white;
+  background: #222;
+  font: 12px/1 "arial";
+  padding: 10px 20px;
+}
+.brand .inner article.contact .map_con .traffic a:hover {
+  background: #d89820;
+}
+.brand .inner article.contact .map_con .branch {
+  display: inline;
+}
+.brand .inner article.contact .map_con .branch li {
+  display: inline;
+}
+.brand .inner article.contact .map_con .branch li.on a {
+  background: #d89820;
+}
+.brand .inner article.contact .map_con .branch a {
+  color: white;
+  background: #222;
+  font: 12px/1 "arial";
+  padding: 10px 20px;
+}
+.brand .inner article.contact .map_con .branch a:hover {
+  background: #d89820;
+}
+.brand .inner article.contact .txt_map {
+  width: 45%;
+  height: 400px;
+  padding: 0 100px;
+}
+.brand .inner article.contact .txt_map > h1 {
+  margin-bottom: 50px;
+  font: bold 60px/1 "Poppins";
+}
+.brand .inner article.contact .txt_map h2 {
+  margin-bottom: 20px;
+  font: bold 30px/1 "Poppins";
+  padding: 0 20px;
+}
+.brand .inner article.contact .txt_map li {
+  margin-bottom: 10px;
+  padding: 0 20px;
+  font: 20px/1.5 "Poppins";
+}
+.brand .inner article.contact .txt_map a {
+  color: #fff;
+  position: absolute;
+  bottom: 1%;
+  padding: 20px 50px;
+  background: #222;
+  font: 20px/1 "Poppins";
+}
+.brand .inner article.contact .txt_map a:hover {
+  background: #d89820;
+}
+
+@media screen and (max-width: 1179px) {
+  .brand .inner {
+    width: 100%;
+    margin-top: 150px;
+  }
+  .brand .inner h1 {
+    text-align: center;
+    font: bold 8vmin/1 "Poppins";
+    margin-bottom: 50px;
+  }
+  .brand .inner .svg {
+    display: block;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+  }
+  .brand .inner .svg svg path {
+    fill: transparent;
+    stroke: #444;
+    stroke-width: 3;
+    stroke-dasharray: 1871;
+    stroke-dashoffset: 1871;
+    transition: stroke-dashoffset 1s, fill 1s 1s;
+  }
+  .brand .inner .svg svg path.on {
+    stroke-dashoffset: 0;
+    fill: #444;
+  }
+  .brand .inner p.intro {
+    font: italic 4vmin/1.5 "Poppins";
+    margin: 3vmin auto;
+  }
+  .brand .inner article.team {
+    display: flex;
+    flex-direction: column;
+    margin: 20vmin 0 40vmin 0;
+  }
+  .brand .inner article.team::after {
+    top: 55%;
+    left: 0%;
+    width: 100%;
+    height: 130vmin;
+  }
+  .brand .inner article.team .txt {
+    width: 100%;
+    height: auto;
+  }
+  .brand .inner article.team .txt h1 {
+    text-align: center;
+    padding-top: 10%;
+    margin-bottom: auto;
+    font: 7vmin/1.5 "arial";
+  }
+  .brand .inner article.team .txt p {
+    padding: 5vmin 10vmin;
+    font: 3vmin/1.5 "Poppins";
+  }
+  .brand .inner article.team .pics {
+    width: 100%;
+    height: 70vmin;
+  }
+  .brand .inner article.team .pics .pic > p {
+    top: 45%;
+    font: bold 4vmin/1 "Lora";
+  }
+  .brand .inner article.contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-bottom: 0;
+  }
+  .brand .inner article.contact .map_con {
+    width: 100%;
+    height: 400px;
+  }
+  .brand .inner article.contact .map_con .map {
+    width: 100%;
+    height: 70%;
+    margin-bottom: 20px;
+  }
+  .brand .inner article.contact .map_con .traffic {
+    margin-bottom: 20px;
+    display: block;
+  }
+  .brand .inner article.contact .map_con .traffic li {
+    display: inline;
+  }
+  .brand .inner article.contact .map_con .traffic a {
+    font: 12px/1 "arial";
+    padding: 10px 20px;
+  }
+  .brand .inner article.contact .map_con .branch {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .brand .inner article.contact .map_con .branch li {
+    display: inline;
+  }
+  .brand .inner article.contact .map_con .branch a {
+    font: 12px/1 "arial";
+    padding: 10px 20px;
+  }
+  .brand .inner article.contact .txt_map {
+    width: 100%;
+    height: 400px;
+    padding: 4vmin 0;
+    margin-top: 4vmin;
+    text-align: center;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .brand .inner article.contact .txt_map > h1 {
+    margin-bottom: 20px;
+    font: bold 60px/1 "Poppins";
+  }
+  .brand .inner article.contact .txt_map h2 {
+    margin-bottom: 20px;
+    font: bold 30px/1 "Poppins";
+    padding: 0 20px;
+  }
+  .brand .inner article.contact .txt_map li {
+    margin-bottom: 10px;
+    padding: 0 20px;
+    font: 20px/1.5 "Poppins";
+  }
+  .brand .inner article.contact .txt_map a {
+    position: relative;
+    display: block;
+    width: 60vmin;
+    padding: 1vmin 0;
+    margin-top: 20px;
+    font: 20px/1 "Poppins";
+  }
+}
 #header {
   width: 100%;
 }

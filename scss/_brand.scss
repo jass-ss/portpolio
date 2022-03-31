@@ -1,0 +1,308 @@
+
+
+.brand .inner{
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 300px;
+    h1{ 
+        text-align: center;
+        font: bold 55px/1 'Poppins';
+        margin-bottom: 100px;
+    }
+    .svg{
+        display: block;
+        width: 100%; height: 500px;
+        text-align: center;
+        svg path{
+            fill: transparent;
+            stroke: #444;
+            stroke-width: 3;
+            stroke-dasharray: 1871;
+            stroke-dashoffset: 1871;
+            transition: stroke-dashoffset 1s, fill 1s 1s;
+            &.on{
+                stroke-dashoffset: 0;
+                fill: #444;
+            }
+        }
+    }
+    p.intro{
+        display: block;
+        text-align: center;
+        font: italic 24px/1.5 'Poppins';
+        color: #222;
+        width: 50%;
+        margin: 50px auto;
+    }
+    article.team{
+        width: 100%;
+        display: flex;
+        margin: 300px 0 400px 0;
+        position: relative;
+        &::after{
+            display: block;
+            position: absolute;
+            top: 50%; left: -50%; transform: translateY(-50%);
+            content: '';
+            width: 100vw;
+            height: 700px;
+            background-color: #efefef;
+            z-index: -1;
+        }
+        .txt{
+            width: 50%; height: 400px;
+            h1{
+                text-align: center;
+                padding-top: 10%;
+                margin-bottom: auto;
+            }
+            p{
+                padding: 50px 100px;
+                font: 24px/1.5 'Poppins' ;
+            }
+        }
+        .pics{
+            width: 50%; height: 400px;
+            font-size: 0;
+            padding: 10px;
+            .pic{
+                display: inline-block;
+                width: calc(50% - 10px); height:calc(50% - 10px);
+                box-sizing: border-box;
+                position: relative;
+                margin: 5px;
+                &:hover{
+                    background-color: #444;
+                    p{opacity: 1; color: white;}
+                    img{opacity: 0.5;}
+                }
+                img{
+                    width: 100%; height: 100%;
+                    object-fit: cover;
+                }
+                >p{
+                    width: 100%; 
+                    position: absolute;
+                    top:40%;
+                    font:  bold 30px/1 'Lora' ;
+                    text-align: center;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+    article.contact{
+        width: 100%; 
+        display: flex;
+        margin: 200px 0;
+        .map_con{
+            width: 55%; height: 400px;
+            text-align: center;
+            
+            .map{
+                width: 100%; height: 80%;
+                margin-bottom: 20px;
+            }
+            .traffic {
+                display: inline;
+                li {display: inline;}
+                a {
+                    color: white; background: #222;
+                    font: 12px/1 'arial'; padding: 10px 20px; 
+                    
+                    &:hover{
+                        background: rgb(216, 152, 32);
+                    }
+                }
+            }
+            .branch {
+                display: inline;
+                
+                li{ 
+                    display: inline;
+                    
+                    &.on a{
+                        background: rgb(216, 152, 32);
+                    }
+                }
+
+                a{
+                    color: white; background: #222;
+                    font: 12px/1 'arial'; padding:10px 20px; 
+                    
+                    &:hover{
+                        background: rgb(216, 152, 32);
+                    }
+                }
+
+               
+            }
+
+        }
+        .txt_map{
+            width: 45%; height: 400px;
+            padding: 0 100px;
+            >h1{
+                margin-bottom: 50px;
+                font: bold 60px/1 'Poppins';
+            }
+            h2{
+                margin-bottom: 20px;
+                font: bold 30px/1 'Poppins';
+                padding: 0 20px;
+            }
+            li{
+                margin-bottom: 10px;
+                padding: 0 20px;
+                font: 20px/1.5 'Poppins';
+            }
+            a{ 
+                color: #fff;
+                position: absolute;
+                bottom:1%;
+                padding: 20px 50px;
+                background: #222;
+                font: 20px/1 'Poppins';
+                
+                &:hover{
+                    background: rgb(216, 152, 32);
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:1179px) {
+    
+
+
+    .brand .inner{
+        width: 100%;
+        margin-top: 150px;
+        h1{ 
+            text-align: center;
+            font: bold 8vmin/1 'Poppins';
+            margin-bottom: 50px;
+        }
+        .svg{
+            display: block;
+            width: 100%; height: 500px;
+            text-align: center;
+            svg path{
+                fill: transparent;
+                stroke: #444;
+                stroke-width: 3;
+                stroke-dasharray: 1871;
+                stroke-dashoffset: 1871;
+                transition: stroke-dashoffset 1s, fill 1s 1s;
+                &.on{
+                    stroke-dashoffset: 0;
+                    fill: #444;
+                }
+            }
+        }
+        p.intro{
+            font: italic 4vmin/1.5 'Poppins';
+            margin: 3vmin auto;
+        }
+        
+        article.team{
+            display: flex;
+            flex-direction: column;
+            margin: 20vmin 0 40vmin 0;
+            &::after{
+                top: 55%; left: 0%;
+                width: 100%;
+                height: 130vmin;
+            }
+            .txt{
+                width: 100%; height: auto;
+                h1{
+                    text-align: center;
+                    padding-top: 10%;
+                    margin-bottom: auto;
+                    font: 7vmin/1.5 'arial' ;
+                }
+                p{
+                    padding: 5vmin 10vmin;
+                    font: 3vmin/1.5 'Poppins' ;
+                }
+            }
+            .pics{
+                width: 100%; height: 70vmin;
+                .pic{
+                    >p{
+                        top:45%;
+                        font:  bold 4vmin/1 'Lora' ;
+                    }
+                }
+            }
+        }
+        article.contact{
+            display: flex;
+            flex-direction: column;
+            margin-top: 200px;
+            margin-bottom:0;
+            .map_con{
+                width: 100%; height: 400px;
+                .map{
+                    width: 100%; height: 70%;
+                    margin-bottom: 20px;
+                }
+                .traffic {
+                    margin-bottom: 20px;
+                    display: block;
+                    li {display: inline;}
+                    a {
+                        font: 12px/1 'arial'; padding: 10px 20px; 
+                    }
+                }
+                .branch {
+                    display: block;
+                    margin-bottom: 20px;
+                    li{ display: inline;}
+                    a{
+                        font: 12px/1 'arial'; padding:10px 20px; 
+                    }
+                }
+            }
+            .txt_map{
+                width: 100%; height: 400px;
+                padding: 4vmin 0;
+                margin-top: 4vmin;
+                text-align: center;
+                background-color: #efefef;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                >h1{
+                    margin-bottom: 20px;
+                    font: bold 60px/1 'Poppins';
+                }
+                h2{
+                    margin-bottom: 20px;
+                    font: bold 30px/1 'Poppins';
+                    padding: 0 20px;
+                }
+                li{
+                    margin-bottom: 10px;
+                    padding: 0 20px;
+                    font: 20px/1.5 'Poppins';
+                }
+                a{ 
+                    position: relative;
+                    display: block;
+                    width: 60vmin;
+                    padding: 1vmin 0;
+                    margin-top: 20px;
+                    font: 20px/1 'Poppins';
+                    
+                }
+            }
+        }
+    }
+    
+}
