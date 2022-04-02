@@ -36,12 +36,16 @@ fieldset {
 #header_main {
   width: 100%;
   position: relative;
+  /*img{
+    width: 100%; height: 50vh;
+  } */
 }
 #header_main > h1 {
   position: absolute;
   top: 50px;
   left: 50px;
   line-height: 0px;
+  z-index: 1;
 }
 #header_main > h1 > a {
   font: bold 24px/1 "Poppins";
@@ -61,6 +65,7 @@ fieldset {
   left: 50%;
   transform: translateX(-50%);
   line-height: 0px;
+  z-index: 1;
 }
 #header_main .util li {
   float: left;
@@ -75,9 +80,81 @@ fieldset {
   font: 20px/1 "Poppins";
   color: #333;
 }
-#header_main img {
+#header_main .main_visual {
   width: 100%;
-  height: 50vh;
+  height: 100vh;
+  font-size: 0;
+}
+#header_main .main_visual .pic {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  background-color: #d1b3af;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+#header_main .main_visual .pic:nth-of-type(4) .box::after {
+  height: 0;
+}
+#header_main .main_visual .pic:hover img {
+  opacity: 1;
+  left: 0;
+}
+#header_main .main_visual .pic:hover .box span:nth-of-type(1) a {
+  color: #d1b3af;
+}
+#header_main .main_visual .pic:hover .box span:nth-of-type(2) {
+  opacity: 1;
+}
+#header_main .main_visual .pic:hover .box span:nth-of-type(2) a {
+  color: #d1b3af;
+}
+#header_main .main_visual .pic img {
+  width: 100%;
+  height: 100%;
+  background-color: #777;
+  opacity: 0;
+  transition: 0.5s;
+  position: absolute;
+  left: -100px;
+  object-fit: cover;
+}
+#header_main .main_visual .pic .box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#header_main .main_visual .pic .box::after {
+  content: "";
+  display: block;
+  margin-top: 20vh;
+  height: 100vh;
+  width: 1px;
+  position: absolute;
+  background-color: #666;
+  right: 0;
+}
+#header_main .main_visual .pic .box span {
+  transition: 0.4s;
+}
+#header_main .main_visual .pic .box span:nth-of-type(1) {
+  font: bold 90px/1 "arial";
+}
+#header_main .main_visual .pic .box span:nth-of-type(1) a {
+  color: #333;
+}
+#header_main .main_visual .pic .box span:nth-of-type(2) {
+  opacity: 0;
+  font: bold 40px/1 "arial";
+  margin-top: 30px;
+}
+#header_main .main_visual .pic .box span:nth-of-type(2) a {
+  color: #d1b3af;
 }
 #header_main .inner {
   width: 100%;
@@ -180,52 +257,6 @@ fieldset {
   font: bold 14px/1 "Poppins";
   color: #888;
   text-align: center;
-}
-#header_main .inner .main_visual {
-  width: 100%;
-  height: 100vh;
-  border: 1px solid black;
-  font-size: 0;
-}
-#header_main .inner .main_visual .pic {
-  display: inline-block;
-  width: 25%;
-  height: 100%;
-  border: 1px solid #4d50fd;
-  background-color: #b83b16;
-  position: relative;
-  overflow: hidden;
-  z-index: 0;
-}
-#header_main .inner .main_visual .pic:hover img {
-  opacity: 1;
-  left: 0;
-}
-#header_main .inner .main_visual .pic:hover .box {
-  opacity: 1;
-}
-#header_main .inner .main_visual .pic img {
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: 0.5s;
-  position: absolute;
-  left: -100px;
-}
-#header_main .inner .main_visual .pic .box {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  opacity: 0;
-  transition: opacity 0.5s 0.2s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#header_main .inner .main_visual .pic .box span {
-  font: bold 150px/1 "arial";
-  color: #222;
 }
 
 /*#header_sub {
