@@ -7,6 +7,7 @@ fixed.addEventListener('mouseenter',()=>{
     pics.forEach(p=>{
         p.style.flex = '1';
         p.querySelector('video').style.height = '15%'
+        pics[2].querySelector('img').style.height = '85vh'
     })
 })
 
@@ -22,7 +23,7 @@ pics.forEach((p,index)=>{
 
         pics.forEach(p=>{
             p.style.flex='1';
-            p.querySelector('img').style.height = '50vh'
+            p.querySelector('img').style.height = '65vh'
             p.querySelector('video').style.height = '15%'
         });
 
