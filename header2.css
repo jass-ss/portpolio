@@ -122,10 +122,26 @@ fieldset {
   flex: 1;
   height: 100%;
   position: relative;
+  color: #333;
+}
+#header_main .main_visual .fixed h1 {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  z-index: 2;
+  font: bold 70px/1 "Poppins";
+}
+#header_main .main_visual .fixed h2 {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  z-index: 2;
+  font: bold 40px/1 "Poppins";
 }
 #header_main .main_visual .fixed img {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 70%;
+  bottom: 0;
   position: absolute;
 }
 #header_main .main_visual .fixed .box {
@@ -142,15 +158,62 @@ fieldset {
   flex: 1.5;
   height: 100%;
   display: flex;
+  color: #fff;
 }
 #header_main .main_visual .wrap .pic {
+  width: 100%;
   position: relative;
   transition: 0.5s;
+  flex: 1;
 }
-#header_main .main_visual .wrap .pic img {
+#header_main .main_visual .wrap .pic video {
+  display: inline-block;
+  width: 90%;
+  height: 15%;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  object-fit: cover;
+  transition: 0.5s;
+}
+#header_main .main_visual .wrap .pic.one img {
   width: 100%;
-  height: 100%;
+  height: 85%;
   transition: 1s;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+#header_main .main_visual .wrap .pic.two img {
+  width: 100%;
+  height: 60%;
+  transition: 1s;
+  position: absolute;
+  top: 10%;
+  object-fit: cover;
+}
+#header_main .main_visual .wrap .pic.three img {
+  width: 100%;
+  height: 65%;
+  transition: 1s;
+  position: absolute;
+  bottom: 0;
+  object-fit: cover;
+}
+#header_main .main_visual .wrap .pic h1 {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  z-index: 2;
+  font: bold 50px/1 "Poppins";
+}
+#header_main .main_visual .wrap .pic h2 {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  z-index: 2;
+  font: bold 24px/1 "Poppins";
 }
 #header_main .main_visual .wrap .pic .box {
   position: absolute;
