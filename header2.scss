@@ -46,6 +46,7 @@ fieldset{ border:none;}
     }
   }
   .util {
+    display: none;
     position: absolute;
     top: 50px;
     left: 50%; transform: translateX(-50%);
@@ -85,16 +86,16 @@ fieldset{ border:none;}
         position: absolute;
         top:20%; left: 5%;
         z-index: 2;
-        font: bold 70px/1 'Poppins'
+        font: bold 60px/1 'Poppins'
       }
       h2{
         position: absolute;
         top:30%; right: 5%;
         z-index: 2;
-        font: bold 40px/1 'Poppins'
+        font: bold 45px/1 'Poppins'
       }
       img{
-        width: 80%; height: 70%; bottom: 0;
+        width: 90%; height: 65%; bottom: 0;
         position: absolute;
       }
       .box{
@@ -109,7 +110,7 @@ fieldset{ border:none;}
 
     }
     .wrap{
-      flex:1.5;
+      flex:2;
       height: 100%;
       display: flex;
       color: #333;
@@ -121,17 +122,18 @@ fieldset{ border:none;}
 
         &.one{
           img{
-            width: 100%; height: 85%;
+            width: 100%; height: 70%;
             transition: 1s;
             position: absolute;
-            top:0;
+            opacity: 0.3;
+            top:15%;
             object-fit: cover;
           }
           video{
             display: inline-block;
-            width: 90%; height: 15%;
+            width: 90%; height: 30%;
             position: absolute;
-            bottom: 10%; left: 50%; transform: translate(-50%,0%);
+            bottom: 50px; left: 50%; transform: translate(-50%,0%);
             object-fit: cover; 
             transition: 0.5s;
           }
@@ -141,46 +143,37 @@ fieldset{ border:none;}
             width: 100%; height: 65%;
             transition: 1s;
             position: absolute;
-            bottom: 0%;
+            bottom: 35%;
             object-fit: cover;
+            opacity: 0.5;
+            background-color: #666;
           }
           video{
             display: inline-block;
-            width: 90%; height: 15%;
+            width: 90%; height: 30%;
             position: absolute;
-            bottom: 30%; left: 50%; transform: translate(-50%,0%);
+            top: 100px; left: 50%; transform: translate(-50%,0%);
             object-fit: cover; 
             transition: 0.5s;
           }
         }
         &.three{
           img{
-            width: 100%; height: 85%;
+            width: 100%; height: 70%;
             transition: 1s;
             position: absolute;
             bottom: 0;
             object-fit: cover;
+            opacity: 0.5;
           }
           video{
             display: inline-block;
-            width: 90%; height: 15%;
+            width: 90%; height: 30%;
             position: absolute;
-            bottom: 0%; left: 50%; transform: translate(-50%,0%);
+            bottom: 50px; left: 50%; transform: translate(-50%,0%);
             object-fit: cover; 
             transition: 0.5s;
           }
-        }
-        h1{
-          position: absolute;
-          top:20%; left: 5%;
-          z-index: 2;
-          font: bold 50px/1 'Poppins'
-        }
-        h2{
-          position: absolute;
-          top:30%; right: 5%;
-          z-index: 2;
-          font: bold 24px/1 'Poppins'
         }
         .box{
           position: absolute;
@@ -190,6 +183,17 @@ fieldset{ border:none;}
           justify-content: center;
           align-items: center;
           height: 100%; width: 100%;
+          
+        h1{
+          z-index: 2;
+          font: bold 35px/1 'Lora';
+        }
+        h2{
+          z-index: 2;
+          font: bold 24px/1 'Poppins';
+          text-align: center;
+          margin-top: 20px;
+        }
         }
       }
     }

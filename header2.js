@@ -6,8 +6,9 @@ console.log(pics);
 fixed.addEventListener('mouseenter',()=>{
     pics.forEach(p=>{
         p.style.flex = '1';
-        p.querySelector('video').style.height = '15%'
-        pics[2].querySelector('img').style.height = '85vh'
+        p.querySelector('video').style.height = '30%'
+        pics[2].querySelector('img').style.height = '70vh'
+        p.querySelector('.box').style.color = '#222';
     })
 })
 
@@ -23,8 +24,9 @@ pics.forEach((p,index)=>{
 
         pics.forEach(p=>{
             p.style.flex='1';
-            p.querySelector('img').style.height = '65vh'
-            p.querySelector('video').style.height = '15%'
+            p.querySelector('img').style.height = '65vh';
+            p.querySelector('video').style.height = '30%';
+            p.querySelector('.box').style.color = '#222';
         });
 
         e.currentTarget.querySelector('video').play();
@@ -37,14 +39,17 @@ pics.forEach((p,index)=>{
         if(index === 0){
             pics[index].querySelector('img').style.height = '85vh';
             pics[index].querySelector('video').style.height = '70vh';
+            pics[index].querySelector('.box').style.color = '#fff'
         }  
         if(index === 1){
             pics[index].querySelector('img').style.height = '85vh';
             pics[index].querySelector('video').style.height = '70vh';
+            pics[index].querySelector('.box').style.color = '#fff'
         }  
         if(index === 2){
             pics[index].querySelector('img').style.height = '85vh';
             pics[index].querySelector('video').style.height = '70vh';
+            pics[index].querySelector('.box').style.color = '#fff'
         }
     });
     p.addEventListener('mouseleave',(e)=>{

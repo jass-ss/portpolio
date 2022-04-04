@@ -60,6 +60,7 @@ fieldset {
   color: #333;
 }
 #header_main .util {
+  display: none;
   position: absolute;
   top: 50px;
   left: 50%;
@@ -129,18 +130,18 @@ fieldset {
   top: 20%;
   left: 5%;
   z-index: 2;
-  font: bold 70px/1 "Poppins";
+  font: bold 60px/1 "Poppins";
 }
 #header_main .main_visual .fixed h2 {
   position: absolute;
   top: 30%;
   right: 5%;
   z-index: 2;
-  font: bold 40px/1 "Poppins";
+  font: bold 45px/1 "Poppins";
 }
 #header_main .main_visual .fixed img {
-  width: 80%;
-  height: 70%;
+  width: 90%;
+  height: 65%;
   bottom: 0;
   position: absolute;
 }
@@ -155,7 +156,7 @@ fieldset {
   width: 100%;
 }
 #header_main .main_visual .wrap {
-  flex: 1.5;
+  flex: 2;
   height: 100%;
   display: flex;
   color: #333;
@@ -168,18 +169,19 @@ fieldset {
 }
 #header_main .main_visual .wrap .pic.one img {
   width: 100%;
-  height: 85%;
+  height: 70%;
   transition: 1s;
   position: absolute;
-  top: 0;
+  opacity: 0.3;
+  top: 15%;
   object-fit: cover;
 }
 #header_main .main_visual .wrap .pic.one video {
   display: inline-block;
   width: 90%;
-  height: 15%;
+  height: 30%;
   position: absolute;
-  bottom: 10%;
+  bottom: 50px;
   left: 50%;
   transform: translate(-50%, 0%);
   object-fit: cover;
@@ -190,15 +192,17 @@ fieldset {
   height: 65%;
   transition: 1s;
   position: absolute;
-  bottom: 0%;
+  bottom: 35%;
   object-fit: cover;
+  opacity: 0.5;
+  background-color: #666;
 }
 #header_main .main_visual .wrap .pic.two video {
   display: inline-block;
   width: 90%;
-  height: 15%;
+  height: 30%;
   position: absolute;
-  bottom: 30%;
+  top: 100px;
   left: 50%;
   transform: translate(-50%, 0%);
   object-fit: cover;
@@ -206,36 +210,23 @@ fieldset {
 }
 #header_main .main_visual .wrap .pic.three img {
   width: 100%;
-  height: 85%;
+  height: 70%;
   transition: 1s;
   position: absolute;
   bottom: 0;
   object-fit: cover;
+  opacity: 0.5;
 }
 #header_main .main_visual .wrap .pic.three video {
   display: inline-block;
   width: 90%;
-  height: 15%;
+  height: 30%;
   position: absolute;
-  bottom: 0%;
+  bottom: 50px;
   left: 50%;
   transform: translate(-50%, 0%);
   object-fit: cover;
   transition: 0.5s;
-}
-#header_main .main_visual .wrap .pic h1 {
-  position: absolute;
-  top: 20%;
-  left: 5%;
-  z-index: 2;
-  font: bold 50px/1 "Poppins";
-}
-#header_main .main_visual .wrap .pic h2 {
-  position: absolute;
-  top: 30%;
-  right: 5%;
-  z-index: 2;
-  font: bold 24px/1 "Poppins";
 }
 #header_main .main_visual .wrap .pic .box {
   position: absolute;
@@ -246,6 +237,16 @@ fieldset {
   align-items: center;
   height: 100%;
   width: 100%;
+}
+#header_main .main_visual .wrap .pic .box h1 {
+  z-index: 2;
+  font: bold 35px/1 "Lora";
+}
+#header_main .main_visual .wrap .pic .box h2 {
+  z-index: 2;
+  font: bold 24px/1 "Poppins";
+  text-align: center;
+  margin-top: 20px;
 }
 #header_main .inner {
   width: 100%;
