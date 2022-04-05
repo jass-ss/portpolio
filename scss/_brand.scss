@@ -54,7 +54,7 @@
             width: 50%; height: 400px;
             h1{
                 text-align: center;
-                padding-top: 10%;
+                padding-top: 20%;
                 margin-bottom: auto;
             }
             p{
@@ -63,7 +63,7 @@
             }
         }
         .pics{
-            width: 50%; height: 400px;
+            width: 50%; height: 500px;
             font-size: 0;
             padding: 10px;
             .pic{
@@ -99,14 +99,18 @@
         .map_con{
             width: 55%; height: 400px;
             text-align: center;
+            position: relative;
             
             .map{
                 width: 100%; height: 80%;
                 margin-bottom: 20px;
             }
             .traffic {
-                display: inline;
-                li {display: inline;}
+                li {
+                    position: absolute;
+                    &:nth-of-type(1){ bottom: 25%; right: 20%; z-index: 1;}
+                    &:nth-of-type(2){ bottom: 25%; right: 1%; z-index: 1;}
+                }
                 a {
                     color: white; background: #222;
                     font: 12px/1 'arial'; padding: 10px 20px; 
@@ -129,7 +133,7 @@
 
                 a{
                     color: white; background: #222;
-                    font: 12px/1 'arial'; padding:10px 20px; 
+                    font: 12px/1 'arial'; padding:10px 69px; 
                     
                     &:hover{
                         background: rgb(216, 152, 32);

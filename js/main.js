@@ -158,7 +158,7 @@ pause.addEventListener("click", (e) => {
   e.preventDefault();
   play.classList.remove("on");
   time.style.display = "none";
-  clearTimeout(running);
+  clearInterval(running);
 
   new Anim(time, {
     prop: "width",

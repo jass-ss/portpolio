@@ -1,3 +1,4 @@
+
 const sections = document.querySelectorAll("section");
 const arr = [];
 let enable = true;

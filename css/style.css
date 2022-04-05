@@ -220,11 +220,11 @@ main {
      }
    } */
 }
-main .one {
+main .empty {
   width: 100%;
-  height: 100vh;
+  height: 0;
 }
-main .one .sub_visual {
+main .empty .sub_visual {
   width: 100%;
   height: 450px;
   background: url(../img/chrome.jpg) no-repeat center/cover;
@@ -232,23 +232,23 @@ main .one .sub_visual {
   box-shadow: 2px 1px 10px #222;
   z-index: -2;
 }
-main .one .sub_visual .text {
+main .empty .sub_visual .text {
   position: absolute;
   width: 50%;
   top: 25%;
   padding-left: 20%;
   padding-right: 70px;
 }
-main .one .sub_visual .text h1 {
+main .empty .sub_visual .text h1 {
   font: bold 50px/1.5 "Poppins";
   color: #fff;
   margin-bottom: 30px;
 }
-main .one .sub_visual .text p {
+main .empty .sub_visual .text p {
   font: normal 22px/1.5 "Poppins";
   color: #fff;
 }
-main .one .sub_visual::after {
+main .empty .sub_visual::after {
   content: "";
   display: block;
   width: 50%;
@@ -259,27 +259,9 @@ main .one .sub_visual::after {
   top: 0;
   z-index: -1;
 }
-main .one .inner {
+main .empty .inner {
   width: 1180px;
   margin: 0 auto;
-}
-main .one .inner .intro {
-  padding: 50px 25% 0 25%;
-  font: italic 24px/2 "Poppins";
-  color: #333;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 150px;
-}
-main .one .inner .intro::before {
-  content: "";
-  display: block;
-  width: 200px;
-  height: 2px;
-  background-color: #000;
-  transform: translateX(100%);
-  margin-bottom: 30px;
 }
 main .two1, main .two2 {
   width: 100%;
@@ -346,6 +328,24 @@ main .three .inner {
   width: 1180px;
   margin: 0 auto;
 }
+main .three .inner .intro {
+  padding: 50px 25% 0 25%;
+  font: italic 24px/2 "Poppins";
+  color: #333;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 100px;
+}
+main .three .inner .intro::before {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 2px;
+  background-color: #000;
+  transform: translateX(100%);
+  margin-bottom: 30px;
+}
 main .three .inner h2 {
   margin: 30px 0px 50px 0px;
   text-align: center;
@@ -362,7 +362,7 @@ main .three .inner article ul {
 main .three .inner article ul li {
   display: inline-block;
   margin: 30px 20px 75px 0px;
-  width: 280px;
+  width: 200px;
 }
 main .three .inner article ul li:nth-of-type(4) {
   margin-right: 0;
@@ -397,7 +397,7 @@ main .three .inner article ul li p {
   color: #444;
 }
 main .three .inner .pics {
-  display: flex;
+  display: none;
   justify-content: center;
 }
 main .three .inner .pics .pic {
@@ -603,6 +603,21 @@ main .five .inner #mail div #submit {
   color: #222;
   padding: 50px;
   text-align: center;
+}
+.community .inner .wrap h1 span:nth-of-type(1) {
+  opacity: 0;
+  transition: all 0.5s 0.1s;
+}
+.community .inner .wrap h1 span:nth-of-type(2) {
+  opacity: 0;
+  transition: all 0.5s 0.2s;
+}
+.community .inner .wrap h1 span:nth-of-type(3) {
+  opacity: 0;
+  transition: all 0.5s 0.3s;
+}
+.community .inner .wrap h1.on span {
+  opacity: 1;
 }
 .community .inner .wrap p {
   font: normal 24px/1.5 "Lora";
@@ -1154,6 +1169,7 @@ main .five .inner #mail div #submit {
 #header_sub2 {
   width: 100%;
   position: relative;
+  z-index: 0;
 }
 #header_sub2 > h1 {
   position: absolute;
@@ -1383,7 +1399,7 @@ main .inner .wrap .list ul {
 }
 main .inner .wrap .list ul li a {
   color: #222;
-  font: bold 20px/1 "Poppins";
+  font: 20px/1 "Poppins";
 }
 main .inner .wrap .list ul li.on a {
   color: darkorange;
@@ -1568,9 +1584,9 @@ main .inner aside.store span {
 .loading {
   width: 300px;
   position: absolute;
-  top: 50%;
+  top: 100%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
   opacity: 1;
   z-index: -1;
   transition: 0.5s;
@@ -1580,96 +1596,93 @@ main .inner aside.store span {
 }
 
 section.gallery {
-  width: 1180px;
-  margin: 0 auto;
-  height: 100%;
+  width: 100%;
   position: relative;
 }
-section.gallery dt {
-  cursor: pointer;
-  position: absolute;
-  top: -10%;
-  right: 5%;
-}
-section.gallery dt.sns {
-  right: 15%;
-}
-section.gallery dd.sns {
+section.gallery h1 {
+  text-align: center;
   margin-top: 150px;
-  margin-bottom: 100px;
-  display: none;
 }
-section.gallery dd.sns.on {
-  display: block;
-  transform: translateY(0px);
+section.gallery p {
+  text-align: center;
+  margin-top: 20px;
 }
-section.gallery dd.sns.on::after {
+section.gallery .sns {
+  width: 1180px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  opacity: 0;
+  margin-top: 150px;
+  transition: 1s;
+}
+section.gallery .sns.on {
+  opacity: 1;
+}
+section.gallery .sns::after {
   content: "";
   display: block;
   clear: both;
 }
-section.gallery dd.sns .item {
-  width: 16.6666666667%;
+section.gallery .sns .item {
+  width: 33.3333333333%;
   float: left;
-  padding: 10px;
+  padding: 20px;
+  position: absolute;
 }
-section.gallery dd.sns .item:hover .pic img {
-  transform: scale(1.1);
+section.gallery .sns .item:hover .pic img {
+  opacity: 0.5;
 }
-section.gallery dd.sns .item > div {
+section.gallery .sns .item:hover p {
+  opacity: 1;
+}
+section.gallery .sns .item:hover .profile {
+  opacity: 1;
+}
+section.gallery .sns .item > div {
   width: 100%;
-  background: #fff;
-  padding: 10px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
-section.gallery dd.sns .item > div .pic {
+section.gallery .sns .item > div .pic {
   display: block;
   width: 100%;
   overflow: hidden;
+  background-color: #111;
+  font-size: 0;
 }
-section.gallery dd.sns .item > div .pic img {
+section.gallery .sns .item > div .pic img {
   width: 100%;
-  transition: all 0.2s;
+  transition: all 0.5s;
 }
-section.gallery dd.sns .item > div p {
-  font: 12px/1.2 "arial";
-  color: #777;
+section.gallery .sns .item > div p {
+  opacity: 0;
+  font: 16px/1.2 "Poppins";
+  color: #fff;
   margin-top: 10px;
   margin-bottom: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
 }
-section.gallery dd.sns .item > div .profile {
+section.gallery .sns .item > div .profile {
+  opacity: 0;
   display: flex;
   align-items: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
 }
-section.gallery dd.sns .item > div .profile img {
+section.gallery .sns .item > div .profile img {
   width: 25px;
   height: 25px;
   border-radius: 0%;
   margin-right: 10px;
 }
-section.gallery dd.sns .item > div .profile span {
-  font: 11px/1 "arial";
-  color: #999;
-}
-section.gallery dd.youtube {
-  display: none;
-  margin-top: 150px;
-  margin-bottom: 100px;
-}
-section.gallery dd.youtube.on {
-  display: block;
-}
-section.gallery dd.youtube.on article {
-  width: 50%;
-  float: left;
-}
-section.gallery dd.youtube.on article h2 {
-  font: 24px/1.2 "arial";
-}
-section.gallery dd.youtube::after {
-  content: "";
-  display: block;
-  clear: both;
+section.gallery .sns .item > div .profile span {
+  font: 20px/1 "Poppins";
+  color: #fff;
 }
 
 aside {
@@ -1686,7 +1699,8 @@ aside {
 }
 aside .con {
   width: 100%;
-  height: 100%;
+  height: 80%;
+  position: relative;
 }
 aside .con > img {
   width: 100%;
@@ -1695,12 +1709,12 @@ aside .con > img {
 }
 aside .close {
   position: absolute;
-  font: bold 10vmin/1 "Poppins";
+  font: bold 5vmin/1 "Poppins";
   color: #fff;
-  top: 20%;
-  right: 25%;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 100%);
   padding: 5px;
-  border: 3px solid #fff;
   cursor: pointer;
 }
 
@@ -1765,7 +1779,7 @@ aside .close {
 }
 .brand .inner article.team .txt h1 {
   text-align: center;
-  padding-top: 10%;
+  padding-top: 20%;
   margin-bottom: auto;
 }
 .brand .inner article.team .txt p {
@@ -1774,7 +1788,7 @@ aside .close {
 }
 .brand .inner article.team .pics {
   width: 50%;
-  height: 400px;
+  height: 500px;
   font-size: 0;
   padding: 10px;
 }
@@ -1818,17 +1832,25 @@ aside .close {
   width: 55%;
   height: 400px;
   text-align: center;
+  position: relative;
 }
 .brand .inner article.contact .map_con .map {
   width: 100%;
   height: 80%;
   margin-bottom: 20px;
 }
-.brand .inner article.contact .map_con .traffic {
-  display: inline;
-}
 .brand .inner article.contact .map_con .traffic li {
-  display: inline;
+  position: absolute;
+}
+.brand .inner article.contact .map_con .traffic li:nth-of-type(1) {
+  bottom: 25%;
+  right: 20%;
+  z-index: 1;
+}
+.brand .inner article.contact .map_con .traffic li:nth-of-type(2) {
+  bottom: 25%;
+  right: 1%;
+  z-index: 1;
 }
 .brand .inner article.contact .map_con .traffic a {
   color: white;
@@ -1852,7 +1874,7 @@ aside .close {
   color: white;
   background: #222;
   font: 12px/1 "arial";
-  padding: 10px 20px;
+  padding: 10px 69px;
 }
 .brand .inner article.contact .map_con .branch a:hover {
   background: #d89820;
@@ -2025,6 +2047,62 @@ aside .close {
     font: 20px/1 "Poppins";
   }
 }
+.support {
+  width: 100%;
+}
+.support .inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+.support .inner h1 {
+  text-align: center;
+}
+.support .inner p {
+  text-align: center;
+}
+.support .inner .youtube {
+  width: 100%;
+}
+.support .inner .youtube .main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.support .inner .youtube .main .video {
+  flex: 1;
+  width: 100%;
+  height: 40vh;
+}
+.support .inner .youtube .main .txt {
+  flex: 1.25;
+  text-align: center;
+}
+.support .inner .youtube .videos {
+  display: flex;
+  justify-content: space-between;
+}
+.support .inner .youtube .videos iframe {
+  display: inline-block;
+}
+.support .inner .youtube .pics {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.support .inner .youtube .pics .slide {
+  position: absolute;
+  left: -295px;
+  width: 2065px;
+  font-size: 0;
+}
+.support .inner .youtube .pics .slide img {
+  display: inline-block;
+  width: 295px;
+  height: 200px;
+  object-fit: cover;
+}
+
 #header {
   width: 100%;
 }

@@ -13,11 +13,10 @@ https://www.flickr.com/services/rest/?method=flickr.test.echo&name=value
 flickr.interestingness.getList
 */
 const body = document.querySelector("body"); 
-const frame = document.querySelector("section .sns"); 
-
+const frame = document.querySelector("dd.sns"); 
 const frame2 = document.querySelector('dd.youtube')
+const sns = document.querySelector('dt.sns');
 const youtube = document.querySelector('dt.youtube')
-
 const input = document.querySelector("#search"); 
 const btnSearch = document.querySelector(".btnSearch"); 
 const loading = document.querySelector(".loading"); 
@@ -163,6 +162,12 @@ function imgLoaded(){
         };
     });
 };
+ 
+
+const youtube_key = "AIzaSyCK9lW6syZHNw0hLhSpWzUcjnQzmoebEQM";
+const playListId = "PLgRXT2p63sR2oVxZ8U2F72MACQoAgiN-A";
+const num = 4;
+const youtube_url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${youtube_key}&playlistId=${playListId}&maxResults=${num}`;
 const closeBtn = youtube.querySelector('aside .closeBtn');
 
 
@@ -184,7 +189,6 @@ youtube.addEventListener('click', e=>{
                 <img src=${item.snippet.thumbnails.high.url}/>
                  <h2>${item.snippet.thumbnails.high.url}</h2>   
             </article> */
-
             `
             <article>
             <div class="pic" data-videoId="${item.snippet.resourceId.videoId}">
@@ -231,6 +235,8 @@ sns.addEventListener('click', e=>{
     youtube.classList.remove('on');
     frame2.classList.remove('on');
 }) ;
+
+
 
 
 

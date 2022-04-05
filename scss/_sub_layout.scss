@@ -164,9 +164,9 @@
 main {
   width: 100%;
 
-  .one {
+  .empty {
     width: 100%;
-    height: 100vh;
+    height: 0;
     .sub_visual {
       width: 100%;
       height: 450px;
@@ -210,25 +210,6 @@ main {
       width: 1180px;
       margin: 0 auto;
 
-      .intro {
-        padding: 50px 25% 0 25%;
-        font: italic 24px/2 "Poppins";
-        color: #333;
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
-        margin-bottom: 150px;
-
-        &::before {
-          content: "";
-          display: block;
-          width: 200px;
-          height: 2px;
-          background-color: #000;
-          transform: translateX(100%);
-          margin-bottom: 30px;
-        }
-      }
     }
   }
 
@@ -348,6 +329,26 @@ main {
     .inner{
       width: 1180px; margin: 0 auto; 
       
+      .intro {
+        padding: 50px 25% 0 25%;
+        font: italic 24px/2 "Poppins";
+        color: #333;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 100px;
+
+        &::before {
+          content: "";
+          display: block;
+          width: 200px;
+          height: 2px;
+          background-color: #000;
+          transform: translateX(100%);
+          margin-bottom: 30px;
+        }
+      }
+      
       h2 {
         margin: 30px 0px 50px 0px;
         text-align: center;
@@ -363,7 +364,8 @@ main {
         li {
           display: inline-block;
           margin: 30px 20px 75px 0px;
-          width: 280px; 
+          //width: 280px; 
+          width: 200px;
           &:nth-of-type(4){margin-right: 0;}
 
           &::before {
@@ -407,7 +409,7 @@ main {
         }
       }
       .pics{
-        display: flex;
+        display: none;
         justify-content: center;
         .pic{ 
           overflow: hidden;

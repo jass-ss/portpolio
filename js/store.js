@@ -1,8 +1,9 @@
+
 window.addEventListener("load", () => {
   const grid = new Isotope("section", {
     itemSelector: "article",
     columnWidth: "article",
-    transitionDuration: "0.8s",
+    transitionDuration: "1.5s",
   });
 
   const category = document.querySelectorAll(".list li"); 

@@ -3,6 +3,7 @@
 #header_sub2 {
   width: 100%;
   position: relative;
+  z-index: 0;
   > h1 {
     position: absolute;
     top: 50px;
@@ -251,7 +252,7 @@ main .inner {
         justify-content: space-evenly;
         li{
           a {color: #222; 
-            font: bold 20px/1 'Poppins';}
+            font: 20px/1 'Poppins';}
           
           &.on a{
             color: darkorange;
